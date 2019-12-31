@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 500C0 223.858 223.858 0 500 0C776.142 0 1000 223.858 1000 500C1000 776.142 776.142 1000 500 1000C223.858 1000 0 776.142 0 500Z" id="椭圆" fill="none" fill-rule="evenodd" stroke="none" />
+  <g id="编组" transform="translate(50.289307 242.86801)">
+    <path d="M556.661 257.504L642.496 343.339L814.165 515.007L900 429.172L728.33 257.504L900 85.8349L814.165 0L556.661 257.504L556.661 257.504Z" id="多边形" fill="#000000" fill-rule="evenodd" stroke="none" />
+    <path d="M0 257.504C0 123.422 108.695 14.7268 242.777 14.7268C376.859 14.7268 485.554 123.422 485.554 257.504C485.554 391.586 376.859 500.28 242.777 500.28C108.695 500.28 0 391.586 0 257.504Z" id="圆" fill="#000000" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

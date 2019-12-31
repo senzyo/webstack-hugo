@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient gradientUnits="objectBoundingBox" cx="126.45142%" cy="-8.074732%" fx="126.45142%" fy="-8.074732%" r="177.01147%" gradientTransform="translate(1.2645142,-0.080747314),scale(1,1.0115763),translate(-1.2645142,0.080747314)" id="gradient_1">
+      <stop offset="55.61%" stop-color="#6D4AFF" />
+      <stop offset="99.44%" stop-color="#AA8EFF" />
+    </radialGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.9305007" y1="1.6976117" x2="0.27562365" y2="-1.7071211" id="gradient_2">
+      <stop offset="0%" stop-color="#E3D9FF" />
+      <stop offset="100%" stop-color="#7341FF" />
+    </linearGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="8.097794" y1="1.6483023" x2="7.136114" y2="-0.853536" id="gradient_3">
+      <stop offset="27.1%" stop-color="#E3D9FF" />
+      <stop offset="100%" stop-color="#7341FF" />
+    </linearGradient>
+  </defs>
+  <g id="ProtonMail">
+    <path d="M0 0L1000 0L1000 1000L0 1000L0 0Z" id="矩形" fill="none" fill-rule="evenodd" stroke="none" />
+    <path d="M729.897 298.008L608.021 400.458L608.103 400.457L448.38 543.259C421.161 567.569 380.535 568.148 352.662 544.664L100 331.993L100 741.294C100 787.516 137.029 825.057 182.722 825.057L729.897 825.057L729.897 298.008L729.897 298.008Z" id="形状" fill="url(#gradient_1)" stroke="none" />
+    <path d="M608.021 400.458L448.38 543.259C421.161 567.569 380.535 568.148 352.662 544.664L100 331.993L100 194.732C100 178.939 118.146 170.257 130.162 180.344L447.155 446.763C477.808 472.561 522.275 472.561 552.928 446.763L608.021 400.458L608.021 400.458Z" id="形状" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+    <path d="M729.897 297.925L729.897 825.057L817.278 825.057C862.974 825.057 900 787.517 900 741.294L900 194.649C900 178.856 881.857 170.256 869.834 180.344L729.897 297.925L729.897 297.925Z" id="形状" fill="url(#gradient_3)" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

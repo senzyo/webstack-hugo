@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.62488437" y1="0.83909774" x2="0.314569" y2="0.047973946" id="gradient_1">
+      <stop offset="0%" stop-color="#00D5F1" />
+      <stop offset="100%" stop-color="#00DFD7" />
+    </linearGradient>
+    <linearGradient gradientUnits="objectBoundingBox" x1="0.49999997" y1="0.22474043" x2="0.7711001" y2="0.9101039" id="gradient_2">
+      <stop offset="0%" stop-color="#00E3CA" />
+      <stop offset="100%" stop-color="#00DBE2" />
+    </linearGradient>
+  </defs>
+  <path d="M0 500C0 223.858 223.858 0 500 0C776.142 0 1000 223.858 1000 500C1000 776.142 776.142 1000 500 1000C223.858 1000 0 776.142 0 500Z" id="椭圆" fill="none" fill-rule="evenodd" stroke="none" />
+  <g id="编组" transform="translate(50.502655 54.00009)">
+    <path d="M355.923 892.978C355.923 892.978 718.916 843.647 886.734 549.521C965.346 411.743 672.313 313.9 591.646 305.977C400.448 287.197 407.401 351.25 407.401 351.25C407.401 351.25 420.764 389.096 521.425 446.489C640.069 514.136 545.543 655.362 491.763 704.079C329.89 850.716 355.923 892.978 355.923 892.978Z" id="2" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <path d="M544.077 0C544.077 0 181.084 49.3317 13.266 343.458C-65.3454 481.236 227.687 579.078 308.354 587.002C499.552 605.781 492.599 541.728 492.599 541.728C492.599 541.728 479.236 503.882 378.575 446.489C259.931 378.843 354.457 237.617 408.237 188.899C570.11 42.2626 544.077 0 544.077 0Z" id="1" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

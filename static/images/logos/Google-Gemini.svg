@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient gradientUnits="objectBoundingBox" cx="-3.4086478%" cy="-54.21878%" fx="-3.4086478%" fy="-54.21878%" r="169.54436%" gradientTransform="translate(-0.034086477,-0.5421878),scale(1,0.9994621),translate(0.034086477,0.5421878)" id="gradient_1">
+      <stop offset="0%" stop-color="#1BA1E3" />
+      <stop offset="0.01%" stop-color="#1BA1E3" />
+      <stop offset="30.0221%" stop-color="#5489D6" />
+      <stop offset="54.5524%" stop-color="#9B72CB" />
+      <stop offset="82.5372%" stop-color="#D96570" />
+      <stop offset="100%" stop-color="#F49C46" />
+    </radialGradient>
+    <radialGradient gradientUnits="objectBoundingBox" cx="78.30218%" cy="55.52031%" fx="78.30218%" fy="55.52031%" r="78.19649%" gradientTransform="translate(0.78302175,0.5552031),scale(1,0.9994744),translate(-0.78302175,-0.5552031)" id="gradient_2">
+      <stop offset="0%" stop-color="#1BA1E3" />
+      <stop offset="0.01%" stop-color="#1BA1E3" />
+      <stop offset="30.0221%" stop-color="#5489D6" />
+      <stop offset="54.5524%" stop-color="#9B72CB" />
+      <stop offset="82.5372%" stop-color="#D96570" />
+      <stop offset="100%" stop-color="#F49C46" />
+    </radialGradient>
+  </defs>
+  <g id="Google-Gemini">
+    <path d="M0 0L1000 0L1000 1000L0 1000L0 0L0 0Z" id="矩形" fill="none" fill-rule="evenodd" stroke="none" />
+    <path d="M779.69 867.957L770.662 888.643C764.058 903.786 743.088 903.786 736.484 888.643L727.458 867.957C711.37 831.075 682.392 801.709 646.232 785.645L618.424 773.289C603.39 766.609 603.39 744.752 618.424 738.072L644.678 726.408C681.766 709.93 711.264 679.478 727.076 641.342L736.344 618.988C742.804 603.41 764.342 603.41 770.802 618.988L780.07 641.342C795.882 679.478 825.38 709.93 862.472 726.408L888.72 738.072C903.76 744.752 903.76 766.609 888.72 773.289L860.914 785.645C824.756 801.709 795.778 831.075 779.69 867.957L779.69 867.957L779.69 867.957L779.69 867.957Z" id="2" fill="url(#gradient_1)" fill-rule="evenodd" stroke="none" />
+    <path d="M481.444 639.908L449.352 713.412C437.016 741.666 397.916 741.666 385.58 713.412L353.488 639.908C324.928 574.495 273.522 522.425 209.398 493.963L121.064 454.75C92.9787 442.284 92.9787 401.428 121.064 388.962L206.64 350.974C272.412 321.78 324.74 267.781 352.812 200.135L385.32 121.802C397.384 92.7326 437.548 92.7326 449.612 121.802L482.12 200.137C510.192 267.781 562.52 321.78 628.292 350.974L713.868 388.962C741.954 401.428 741.954 442.284 713.868 454.75L625.534 493.963C561.412 522.425 510.004 574.495 481.444 639.908L481.444 639.908L481.444 639.908L481.444 639.908Z" id="1" fill="url(#gradient_2)" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>
