@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 800 800" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <path d="M0 0L800 0L800 800L0 800L0 0Z" id="矩形" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+  <g id="编组" transform="translate(146 292)">
+    <path d="M28 43L0 72L91 72L1 216L129 216L145 187L53 187L142 43L28 43Z" id="z" fill="#4BAFD3" fill-rule="evenodd" stroke="none" />
+    <path d="M182 0L209 0L209 216L182 216L182 0Z" id="l" fill="#626063" fill-rule="evenodd" stroke="none" />
+    <path d="M277.651 67.0323L303.905 73.3353L269.589 216.274L243.335 209.971L277.651 67.0323Z" id="i1" fill="#626063" fill-rule="evenodd" stroke="none" />
+    <path d="M285 37L311.254 43.303L305.651 66.6399L279.397 60.3369L285 37Z" id="i2" fill="#626063" fill-rule="evenodd" stroke="none" />
+    <path d="M341 38L368 38L368 216L341 216L341 38Z" id="b1" fill="#626063" fill-rule="evenodd" stroke="none" />
+    <path d="M341 27L368 27L368 34L341 34L341 27Z" id="b2" fill="#626063" fill-rule="evenodd" stroke="none" />
+    <path d="M341 0L368 0L368 23L341 23L341 0Z" id="b3" fill="#626063" fill-rule="evenodd" stroke="none" />
+    <path d="M384 210.205C394.231 213.947 405.36 216 417 216C467.258 216 508 177.72 508 130.5C508 83.2796 467.258 45 417 45C405.36 45 394.231 47.0532 384 50.7953L384 94.3601C393.429 80.7441 408.066 72 424.5 72C452.943 72 476 98.1913 476 130.5C476 162.809 452.943 189 424.5 189C408.066 189 393.429 180.256 384 166.64L384 210.205Z" id="b4" fill="#626063" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

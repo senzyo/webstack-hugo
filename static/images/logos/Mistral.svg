@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="800px" height="800px" viewBox="0 0 800 800" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Mistral">
+    <path d="M0 0L800 0L800 800L0 800L0 0Z" id="矩形" fill="none" fill-rule="evenodd" stroke="none" />
+    <g id="Mistral" transform="translate(100 119)">
+      <path d="M37.5 0L150 0L150 112.5L37.5 112.5L37.5 0Z" id="形状" fill="#FECE00" stroke="none" />
+      <path d="M487.5 0L600 0L600 112.5L487.5 112.5L487.5 0Z" id="形状" fill="#FECE00" stroke="none" />
+      <path d="M37.5 112.5L150 112.5L150 225L37.5 225L37.5 112.5Z" id="形状" fill="#FFA301" stroke="none" />
+      <path d="M37.5 337.5L150 337.5L150 450L37.5 450L37.5 337.5Z" id="形状" fill="#FE4900" stroke="none" />
+      <path d="M262.5 337.5L375 337.5L375 450L262.5 450L262.5 337.5Z" id="形状" fill="#FE4900" stroke="none" />
+      <path d="M487.5 337.5L600 337.5L600 450L487.5 450L487.5 337.5Z" id="形状" fill="#FE4900" stroke="none" />
+      <path d="M375 112.5L487.5 112.5L487.5 225L375 225L375 112.5Z" id="形状" fill="#FFA301" stroke="none" />
+      <path d="M37.5 225L150 225L150 337.5L37.5 337.5L37.5 225Z" id="形状" fill="#FF6F00" stroke="none" />
+      <path d="M37.5 450L150 450L150 562.5L37.5 562.5L37.5 450Z" id="形状" fill="#FE0107" stroke="none" />
+      <path d="M487.5 450L600 450L600 562.5L487.5 562.5L487.5 450Z" id="形状" fill="#FE0107" stroke="none" />
+      <path d="M375 225L487.5 225L487.5 337.5L375 337.5L375 225Z" id="形状" fill="#FF6F00" stroke="none" />
+      <path d="M150 112.5L262.5 112.5L262.5 225L150 225L150 112.5Z" id="形状" fill="#FFA301" stroke="none" />
+      <path d="M487.5 112.5L600 112.5L600 225L487.5 225L487.5 112.5Z" id="形状" fill="#FFA301" stroke="none" />
+      <path d="M150 225L262.5 225L262.5 337.5L150 337.5L150 225Z" id="形状" fill="#FF6F00" stroke="none" />
+      <path d="M487.5 225L600 225L600 337.5L487.5 337.5L487.5 225Z" id="形状" fill="#FF6F00" stroke="none" />
+      <path d="M262.5 225L375 225L375 337.5L262.5 337.5L262.5 225Z" id="形状" fill="#FF6F00" stroke="none" />
+      <path d="M0 0L37.5 0L37.5 562.5L0 562.5L0 0Z" id="形状" fill="#191D1D" stroke="none" />
+      <path d="M450 0L487.5 0L487.5 112.5L450 112.5L450 0Z" id="形状" fill="#191D1D" stroke="none" />
+      <path d="M337.5 112.5L375 112.5L375 225L337.5 225L337.5 112.5Z" id="形状" fill="#191D1D" stroke="none" />
+      <path d="M225 337.5L262.5 337.5L262.5 450L225 450L225 337.5Z" id="形状" fill="#191D1D" stroke="none" />
+      <path d="M450 337.5L487.5 337.5L487.5 562.5L450 562.5L450 337.5Z" id="形状" fill="#191D1D" stroke="none" />
+    </g>
+  </g>
+</svg>

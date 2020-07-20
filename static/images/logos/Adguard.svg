@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="Adguard">
+    <path d="M0 0L1000 0L1000 1000L0 1000L0 0Z" id="矩形" fill="none" fill-rule="evenodd" stroke="none" />
+    <g id="Group" transform="translate(100 100)">
+      <path d="M400 0C275 0 125 27.5 0 92.5C0 225 0 567.5 400 800C800 567.5 800 227.5 800 92.5C675 25 525 0 400 0L400 0Z" id="形状" fill="#68BC71" fill-rule="evenodd" stroke="none" />
+      <path d="M400 0L400 800C0 567.5 0 227.5 0 92.5C125 25 275 0 400 0L400 0Z" id="形状" fill="#67B279" fill-rule="evenodd" stroke="none" />
+      <path d="M397.5 515L625 207.5C610 192.5 595 202.5 585 210L392.5 410L317.5 322.5C285 282.5 237.5 312.5 225 322.5L395 515" id="形状" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1000px" height="1000px" viewBox="0 0 1000 1000" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <g id="编组">
+    <path d="M0 0L1000 0L1000 1000L0 1000L0 0Z" id="矩形" fill="#006BDB" fill-rule="evenodd" stroke="none" />
+    <path d="M500.836 200C500.836 200 333.476 528.463 345.632 661.83C357.787 795.197 470.433 800 500.836 800C531.24 800 646.126 787.521 656.041 661.83C665.956 536.139 500.836 200 500.836 200Z" id="矢量图" fill="#FFFFFF" fill-rule="evenodd" stroke="none" />
+  </g>
+</svg>

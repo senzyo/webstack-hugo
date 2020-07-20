@@ -1,0 +1,93 @@
+{{ if .Site.Params.search.enable }}
+<!-- 搜索 -->
+<div id="search" class="s-search">
+    <div id="search-list" class="hide-type-list">
+        <ul class="search-type">
+            {{ if ne .Site.Params.search.google false }}
+            <li><input hidden type="radio" name="type" id="type-Google" value="https://www.google.com/search?q=" data-placeholder="Google 搜索">
+                <label for="type-Google">
+                    <span style="color:#4285F4">G</span><span style="color:#EA4335">o</span><span style="color:#FBBC05">o</span><span style="color:#4285F4">g</span><span style="color:#34A853">l</span><span style="color:#EA4335">e</span>
+                </label>
+            </li>
+            {{ else }}
+            {{ end }}
+            {{ if ne .Site.Params.search.bing false }}
+            <li><input hidden type="radio" name="type" id="type-Bing" value="https://www.bing.com/search?cc=us&setlang=zh-Hans&filt=custom&q=" data-placeholder="Bing 搜索">
+                <label for="type-Bing">
+                    <span style="color:#258FFA">Bing</span>
+                </label>
+            </li>
+            {{ else }}
+            {{ end }}
+            {{ if ne .Site.Params.search.metaso false }}
+            <li><input hidden type="radio" name="type" id="type-Metaso" value="https://metaso.cn/?q=" data-placeholder="秘塔 AI 搜索">
+                <label for="type-Metaso">
+                    <span style="color:#2951C2">秘塔</span>
+                </label>
+            </li>
+            {{ else }}
+            {{ end }}
+            {{ if ne .Site.Params.search.perplexity false }}
+            <li><input hidden type="radio" name="type" id="type-Perplexity" value="https://www.perplexity.ai/search/new?q=" data-placeholder="Perplexity 联网搜索">
+                <label for="type-Perplexity">
+                    <span style="color:#999999">Perplexity</span>
+                </label>
+            </li>
+            {{ else }}
+            {{ end }}
+            {{ if ne .Site.Params.search.duckduckgo false }}
+            <li><input hidden type="radio" name="type" id="type-DuckDuckGo" value="https://duckduckgo.com/?kae=c&kp=-2&kz=-1&kav=1&kn=1&k1=-1&kk=-1&kaj=m&kay=b&kak=-1&kax=-1&kap=-1&kaq=-1&kao=-1&kau=-1&ko=1&kpsb=-1&kbg=-1&kbd=-1&kbc=1&kw=w&kt=n&ka=n&k18=1&q=" data-placeholder="DuckDuckGo 搜索">
+                <label for="type-DuckDuckGo">
+                    <span style="color:#DE5833">DuckDuckGo</span>
+                </label>
+            </li>
+            {{ else }}
+            {{ end }}
+            {{ if ne .Site.Params.search.yandex false }}
+            <li><input hidden type="radio" name="type" id="type-Yandex" value="https://yandex.com/search/?text=" data-placeholder="Yandex 搜索">
+                <label for="type-Yandex">
+                    <span style="color:#FC3F1D">Y</span><span>andex</span>
+                </label>
+            </li>
+            {{ else }}
+            {{ end }}
+            {{ if ne .Site.Params.search.baidu false }}
+            <li><input checked hidden type="radio" name="type" id="type-Baidu" value="https://www.baidu.com/s?wd=" data-placeholder="百度一下">
+                <label for="type-Baidu">
+                    <span style="color:#E10602">Bai</span><span style="color:#4E6EF2">du</span>
+                </label>
+            </li>
+            {{ else }}
+            {{ end }}
+        </ul>
+    </div>
+    <form action="?s=" method="get" target="_blank" rel="noopener noreffer" id="super-search-fm">
+        <input type="text" id="search-text" placeholder="输入关键字搜索" style="outline:0">
+        <button type="submit">
+            <i class="fa fa-search "></i>
+        </button>
+    </form>
+    <div class="set-check hidden-xs">
+        <input type="checkbox" id="set-search-blank" class="bubble-3" autocomplete="off">
+    </div>
+</div>
+<script type="text/javascript">
+    eval(function (e, t, a, c, i, n) {
+        if (i = function (e) {
+            return (e < t ? "" : i(parseInt(e / t))) + (35 < (e %= t) ? String.fromCharCode(e + 29) : e.toString(36))
+        }, !"".replace(/^/, String)) {
+            for (; a--;) n[i(a)] = c[a] || i(a);
+            c = [function (e) {
+                return n[e]
+            }], i = function () {
+                return "\\w+"
+            }, a = 1
+        }
+        for (; a--;) c[a] && (e = e.replace(new RegExp("\\b" + i(a) + "\\b", "g"), c[a]));
+        return e
+    }('!2(){2 g(){h(),i(),j(),k()}2 h(){d.9=s()}2 i(){z a=4.8(\'A[B="7"][5="\'+p()+\'"]\');a&&(a.9=!0,l(a))}2 j(){v(u())}2 k(){w(t())}2 l(a){P(z b=0;b<e.O;b++)e[b].I.1c("s-M");a.F.F.F.I.V("s-M")}2 m(a,b){E.H.S("L"+a,b)}2 n(a){6 E.H.Y("L"+a)}2 o(a){f=a.3,v(u()),w(a.3.5),m("7",a.3.5),c.K(),l(a.3)}2 p(){z b=n("7");6 b||a[0].5}2 q(a){m("J",a.3.9?1:-1),x(a.3.9)}2 r(a){6 a.11(),""==c.5?(c.K(),!1):(w(t()+c.5),x(s()),s()?E.U(b.G,+T X):13.Z=b.G,10 0)}2 s(){z a=n("J");6 a?1==a:!0}2 t(){6 4.8(\'A[B="7"]:9\').5}2 u(){6 4.8(\'A[B="7"]:9\').W("14-N")}2 v(a){c.1e("N",a)}2 w(a){b.G=a}2 x(a){a?b.3="1a":b.16("3")}z y,a=4.R(\'A[B="7"]\'),b=4.8("#18-C-19"),c=4.8("#C-12"),d=4.8("#17-C-15"),e=4.R(".C-1b"),f=a[0];P(g(),y=0;y<a.O;y++)a[y].D("Q",o);d.D("Q",q),b.D("1d",r)}();',62, 77,"||function|target|document|value|return|type|querySelector|checked||||||||||||||||||||||||||var|input|name|search|addEventListener|window|parentNode|action|localStorage|classList|newWindow|focus|superSearch|current|placeholder|length|for|change|querySelectorAll|setItem|new|open|add|getAttribute|Date|getItem|href|void|preventDefault|text|location|data|blank|removeAttribute|set|super|fm|_blank|group|remove|submit|setAttribute".split("|"), 0, {}));
+</script>
+<!-- 搜索 end -->
+{{ else }}
+<div class="no-search"></div>
+{{ end }}

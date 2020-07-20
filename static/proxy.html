@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siteproxy</title>
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            font-family: sans-serif;
+            color: #a89e84;
+            background-color: #fdf6e3;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        body.dark-mode {
+            color: #dddddd;
+            background-color: #000000;
+        }
+
+        .container {
+            width: 80%;
+        }
+
+        h1 {
+            display: inline-block;
+            color: #a89e84;
+            margin: 100px 0 62px 0;
+        }
+
+        .dark-mode h1 {
+            color: #dddddd;
+        }
+
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 40px;
+            font-size: 18px;
+            color: #a89e84;
+            border: 2px solid #a89e84;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            outline: none;
+            box-sizing: border-box;
+        }
+
+        .dark-mode .search-box {
+            color: #ffffff;
+            border-color: #777777;
+            background-color: #333333;
+        }
+
+        .engine-tabs {
+            width: 100%;
+        }
+
+        .engine-tab {
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 0 10px 15px 0;
+            text-decoration: none;
+            border: 2px solid #a89e84;
+            background-color: #eee8d5;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .dark-mode .engine-tab {
+            border-color: #777777;
+            background-color: #333333;
+        }
+
+        .engine-tab.active {
+            color: #7c786f;
+            background-color: #d9d2c2;
+        }
+
+        .dark-mode .engine-tab.active {
+            color: #ffffff;
+            background-color: #555555;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+            <path
+                d="M736 624A399.52 399.52 0 0 1 352.48 110.944a416 416 0 1 0 599.616 449.344A397.728 397.728 0 0 1 736 624z"
+                fill="#000000">
+            </path>
+        </svg>
+    </div>
+    <div class="container">
+        <h1>Siteproxy</h1>
+        <div class="engine-tabs">
+            <span class="engine-tab active" data-engine="visit">访问网址</span>
+            <span class="engine-tab" data-engine="google_ipv4">Google IPv4</span>
+            <span class="engine-tab" data-engine="google_ipv6">Google IPv6</span>
+            <span class="engine-tab" data-engine="duckduckgo">DuckDuckGo</span>
+            <span class="engine-tab" data-engine="bing">Bing</span>
+        </div>
+        <input type="text" class="search-box" placeholder="输入要访问的网址..." />
+    </div>
+
+    <script>
+        const searchBox = document.querySelector('.search-box');
+        const engineTabs = document.querySelectorAll('.engine-tab');
+        const themeToggle = document.querySelector('.theme-toggle');
+        let activeEngine = 'visit';
+
+        window.addEventListener('load', () => {
+            const theme = localStorage.getItem('theme');
+            if (theme === 'dark-mode') {
+                document.body.classList.add('dark-mode');
+                const svg = themeToggle.querySelector('svg');
+                svg.innerHTML = `<path d="M511.998465 305.797661c-113.855094 0-206.190059 92.332918-206.190059 206.182896 0 113.888863 92.334965 206.145034 206.190059 206.145034 113.89398 0 206.154243-92.295056 206.154243-206.145034S625.892445 305.797661 511.998465 305.797661L511.998465 305.797661zM511.998465 202.705702c18.992563 0 34.364669-15.371082 34.364669-34.322713L546.363134 99.652628c0-18.9854-15.372106-34.362622-34.364669-34.362622-18.9854 0-34.363645 15.377222-34.363645 34.362622l0 68.730361C477.63482 187.367365 493.013065 202.705702 511.998465 202.705702L511.998465 202.705702zM511.998465 821.216527c-18.9854 0-34.363645 15.415085-34.363645 34.362622l0 68.728314c0 19.024286 15.378246 34.401508 34.363645 34.401508 18.992563 0 34.364669-15.377222 34.364669-34.401508L546.363134 855.579149C546.363134 836.631612 530.990005 821.216527 511.998465 821.216527L511.998465 821.216527zM924.306952 477.618958l-68.728314 0c-18.990516 0-34.367739 15.375176-34.367739 34.361599 0 18.989493 15.377222 34.362622 34.367739 34.362622l68.728314 0c19.024286 0 34.401508-15.373129 34.401508-34.362622C958.70846 492.995157 943.331237 477.618958 924.306952 477.618958L924.306952 477.618958zM202.71133 511.98158c0-18.986423-15.371082-34.361599-34.363645-34.361599l-68.693522 0c-18.948561 0-34.363645 15.375176-34.363645 34.361599 0 18.989493 15.415085 34.362622 34.363645 34.362622l68.732407 0C187.37197 546.344203 202.71133 530.97005 202.71133 511.98158L202.71133 511.98158zM779.289114 293.326629l48.585555-48.583508c13.443174-13.443174 13.443174-35.18536 0-48.585555-13.400195-13.405311-35.18229-13.405311-48.585555 0l-48.626487 48.585555c-13.367449 13.403265-13.367449 35.218106 0 48.583508C744.029052 306.730916 765.810125 306.730916 779.289114 293.326629L779.289114 293.326629zM244.710886 730.633463l-48.586578 48.624441c-13.404288 13.366426-13.404288 35.146475 0 48.585555 13.405311 13.44215 35.149545 13.44215 48.586578 0l48.586578-48.585555c13.404288-13.43908 13.443174-35.218106 0-48.624441C279.89727 717.270107 258.153036 717.270107 244.710886 730.633463L244.710886 730.633463zM779.289114 730.633463c-13.440104-13.364379-35.222199-13.364379-48.626487 0-13.405311 13.366426-13.367449 35.147498 0 48.624441l48.626487 48.585555c13.365402 13.44215 35.146475 13.44215 48.585555 0 13.443174-13.401218 13.443174-35.180244 0-48.585555L779.289114 730.633463 779.289114 730.633463zM244.710886 196.120726c-13.438057-13.405311-35.18229-13.405311-48.586578 0-13.404288 13.403265-13.404288 35.145451 0 48.584532l48.586578 48.584532c13.405311 13.405311 35.187407 13.443174 48.586578 0 13.443174-13.365402 13.404288-35.180244 0-48.584532L244.710886 196.120726 244.710886 196.120726zM244.710886 196.120726" fill="#ffffff"></path>`;
+            }
+        });
+
+        themeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            const svg = themeToggle.querySelector('svg');
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('theme', 'dark-mode');
+                svg.innerHTML = `<path d="M511.998465 305.797661c-113.855094 0-206.190059 92.332918-206.190059 206.182896 0 113.888863 92.334965 206.145034 206.190059 206.145034 113.89398 0 206.154243-92.295056 206.154243-206.145034S625.892445 305.797661 511.998465 305.797661L511.998465 305.797661zM511.998465 202.705702c18.992563 0 34.364669-15.371082 34.364669-34.322713L546.363134 99.652628c0-18.9854-15.372106-34.362622-34.364669-34.362622-18.9854 0-34.363645 15.377222-34.363645 34.362622l0 68.730361C477.63482 187.367365 493.013065 202.705702 511.998465 202.705702L511.998465 202.705702zM511.998465 821.216527c-18.9854 0-34.363645 15.415085-34.363645 34.362622l0 68.728314c0 19.024286 15.378246 34.401508 34.363645 34.401508 18.992563 0 34.364669-15.377222 34.364669-34.401508L546.363134 855.579149C546.363134 836.631612 530.990005 821.216527 511.998465 821.216527L511.998465 821.216527zM924.306952 477.618958l-68.728314 0c-18.990516 0-34.367739 15.375176-34.367739 34.361599 0 18.989493 15.377222 34.362622 34.367739 34.362622l68.728314 0c19.024286 0 34.401508-15.373129 34.401508-34.362622C958.70846 492.995157 943.331237 477.618958 924.306952 477.618958L924.306952 477.618958zM202.71133 511.98158c0-18.986423-15.371082-34.361599-34.363645-34.361599l-68.693522 0c-18.948561 0-34.363645 15.375176-34.363645 34.361599 0 18.989493 15.415085 34.362622 34.363645 34.362622l68.732407 0C187.37197 546.344203 202.71133 530.97005 202.71133 511.98158L202.71133 511.98158zM779.289114 293.326629l48.585555-48.583508c13.443174-13.443174 13.443174-35.18536 0-48.585555-13.400195-13.405311-35.18229-13.405311-48.585555 0l-48.626487 48.585555c-13.367449 13.403265-13.367449 35.218106 0 48.583508C744.029052 306.730916 765.810125 306.730916 779.289114 293.326629L779.289114 293.326629zM244.710886 730.633463l-48.586578 48.624441c-13.404288 13.366426-13.404288 35.146475 0 48.585555 13.405311 13.44215 35.149545 13.44215 48.586578 0l48.586578-48.585555c13.404288-13.43908 13.443174-35.218106 0-48.624441C279.89727 717.270107 258.153036 717.270107 244.710886 730.633463L244.710886 730.633463zM779.289114 730.633463c-13.440104-13.364379-35.222199-13.364379-48.626487 0-13.405311 13.366426-13.367449 35.147498 0 48.624441l48.626487 48.585555c13.365402 13.44215 35.146475 13.44215 48.585555 0 13.443174-13.401218 13.443174-35.180244 0-48.585555L779.289114 730.633463 779.289114 730.633463zM244.710886 196.120726c-13.438057-13.405311-35.18229-13.405311-48.586578 0-13.404288 13.403265-13.404288 35.145451 0 48.584532l48.586578 48.584532c13.405311 13.405311 35.187407 13.443174 48.586578 0 13.443174-13.365402 13.404288-35.180244 0-48.584532L244.710886 196.120726 244.710886 196.120726zM244.710886 196.120726" fill="#ffffff"></path>`;
+            } else {
+                localStorage.setItem('theme', 'light-mode');
+                svg.innerHTML = `<path d="M736 624A399.52 399.52 0 0 1 352.48 110.944a416 416 0 1 0 599.616 449.344A397.728 397.728 0 0 1 736 624z" fill="#000000"></path>`;
+            }
+        });
+
+        searchBox.addEventListener('keyup', (event) => {
+            if (event.key === 'Enter') {
+                const inputText = searchBox.value;
+                if (activeEngine === 'visit') {
+                    visitWebsite(inputText);
+                } else {
+                    search(inputText);
+                }
+            }
+        });
+
+        engineTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                engineTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+                activeEngine = tab.dataset.engine;
+                if (activeEngine === 'visit') {
+                    searchBox.placeholder = "输入要访问的网址...";
+                } else {
+                    searchBox.placeholder = "输入搜索内容...";
+                }
+            });
+        });
+
+        function visitWebsite(url) {
+            if (url.startsWith('http://') || url.startsWith('https://')) {
+                window.open(url, '_blank');
+            } else {
+                alert('请输入以 http:// 或 https:// 开头的 URL');
+            }
+        }
+
+        function search(query) {
+            if (activeEngine === 'google_ipv4') {
+                window.open(`https://ipv4.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+            } else if (activeEngine === 'google_ipv6') {
+                window.open(`https://ipv6.google.com/search?q=${encodeURIComponent(query)}`, '_blank');
+            } else if (activeEngine === 'duckduckgo') {
+                window.open(`https://duckduckgo.com/?kae=c&kp=-2&kz=-1&kav=1&kn=1&k1=-1&kk=-1&kaj=m&kay=b&kak=-1&kax=-1&kap=-1&kaq=-1&kao=-1&kau=-1&ko=1&kpsb=-1&kbg=-1&kbd=-1&kbc=1&kw=w&kt=n&ka=n&k18=1&q=${encodeURIComponent(query)}`, '_blank');
+            } else if (activeEngine === 'bing') {
+                window.open(`https://www.bing.com/search?q=${encodeURIComponent(query)}`, '_blank');
+            }
+        }
+    </script>
+</body>
+
+</html>
