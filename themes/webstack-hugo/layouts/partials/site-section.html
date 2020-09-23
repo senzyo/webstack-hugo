@@ -1,0 +1,29 @@
+<!-- {{ .name }} -->
+<h4 class="text-gray">
+    {{ partial "icon" .icon }}
+    <span id="{{ md5 .name }}"></span>{{ .name }}
+</h4>
+<div class="row">
+    {{ range .links }}
+    <div class="site-card-wrap">
+        <a href="{{ .url }}" target="_blank" rel="noopener noreferrer"
+            class="site-card"
+            title="{{ .url }}">
+            <div class="card-body">
+                <div class="card-icon">
+                    <img class="img-square" src="{{ .logo }}" alt="{{ .title }}" loading="lazy"
+                        onerror="this.src='images/Default.svg'" width="40" height="40">
+                </div>
+                <div class="card-text{{ if not .description }} no-desc{{ end }}">
+                    <div class="card-title text-clip-1">
+                        <strong>{{ .title }}</strong>
+                    </div>
+                    {{ if .description }}<p class="text-clip-2">{{ .description }}</p>{{ end }}
+                </div>
+            </div>
+        </a>
+    </div>
+    {{ end }}
+</div>
+<br />
+<!--END {{ .name }} -->

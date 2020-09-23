@@ -1,0 +1,50 @@
+/* ============================================================
+ * Buttons — Floating action buttons (go-top, go-bottom, theme)
+ * ============================================================ */
+
+footer.main-footer #go-up,
+footer.main-footer #go-down,
+footer.main-footer #theme-toggle {
+  width: 45px;
+  float: right;
+  position: fixed;
+  right: 20px;
+  z-index: 10;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer.main-footer #theme-toggle {
+  bottom: 120px;
+}
+
+footer.main-footer #go-up {
+  bottom: 75px;
+}
+
+footer.main-footer #go-down {
+  bottom: 30px;
+}
+
+footer.main-footer #go-up a,
+footer.main-footer #go-down a,
+footer.main-footer #theme-toggle a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  border: 1px solid var(--fab-border);
+  border-radius: 50%;
+  background: var(--fab-bg);
+  color: var(--fab-icon);
+  font-size: 20px;
+  line-height: 35px;
+  padding: 0;
+}
+
+footer.main-footer #go-up a:hover,
+footer.main-footer #go-down a:hover,
+footer.main-footer #theme-toggle a:hover {
+  background-color: var(--fab-hover);
+}

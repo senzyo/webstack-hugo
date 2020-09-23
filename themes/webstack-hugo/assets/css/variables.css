@@ -1,0 +1,87 @@
+/* ============================================================
+ * Theme variables — Solarized Light (default) & Dark (.black)
+ * Sidebar colors follow theme via variables below
+ * ============================================================ */
+
+:root {
+  /* 统一过渡时长/缓动, 侧边栏交互与状态切换共用, 保证动画手感一致 */
+  --motion: 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+
+  --bg-page: #f3eddb;
+  --bg-card: #fdf6e3;
+  --bg-card-hover: #fffaef;
+  --bg-input: #fdf6e3;
+  --bg-navbar: #f0e9d3;
+
+  --text-base: #000000;
+  --text-link: #838383;
+  --text-link-hover: #000000;
+  --text-body: #838383;
+  --text-muted: #838383;
+
+  --border-card: #e8e2d3;
+  --shadow-card: 0 17px 50px -8px rgba(0, 0, 0, 0.15);
+  --shadow-navbar: 0 10px 40px -20px rgba(0, 0, 0, 0.15);
+
+  --bg-sidebar: #ece4cc;
+  --bg-sidebar-active: #fffaef;
+  --bg-sidebar-hover: #fdf6e3;
+
+  --text-sidebar-link: #838383;
+  --text-sidebar-hover: #000000;
+  --text-sidebar-active: #000000;
+  --text-sidebar-muted: #838383;
+
+  --sidebar-scrollbar: #ddd6c1;
+
+  --github-corner-fill: #9d895c;
+  --search-btn-bg: #ece4cc;
+  --search-btn-hover-bg: #fffaef;
+  --search-btn-icon: #9d895c;
+  --search-text: #838383;
+
+  --fab-border: #dcd5c1;
+  --fab-bg: #ece4cc;
+  --fab-icon: #9d895c;
+  --fab-hover: #fffaef;
+}
+
+.black {
+  --bg-page: #000000;
+  --bg-card: #303030;
+  --bg-card-hover: #3d4044;
+  --bg-input: #303030;
+  --bg-navbar: #202020;
+
+  --text-base: #ffffff;
+  --text-link: #aaaaaa;
+  --text-link-hover: #ffffff;
+  --text-body: #aaaaaa;
+  --text-muted: #aaaaaa;
+
+  --border-card: transparent;
+  --shadow-card: 0 17px 50px -8px rgba(255, 255, 255, 0.5);
+  --shadow-navbar: 20px 10px 40px -20px rgba(255, 255, 255, 0.25);
+
+  --bg-sidebar: #202020;
+  --bg-sidebar-active: #3d4044;
+  --bg-sidebar-hover: #3d4044;
+
+  --text-sidebar-link: #aaaaaa;
+  --text-sidebar-hover: #ffffff;
+  --text-sidebar-active: #ffffff;
+  --text-sidebar-muted: #aaaaaa;
+
+  --sidebar-scrollbar: #3d4044;
+
+  --github-corner-fill: #000000;
+  --search-btn-bg: #000000;
+  --search-btn-hover-bg: #3d4044;
+  --search-btn-icon: #aaaaaa;
+  --search-text: #ffffff;
+
+  --fab-border: #505050;
+  --fab-bg: #3d4044;
+  --fab-icon: #ffffff;
+  --fab-hover: #000000;
+}

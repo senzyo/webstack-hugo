@@ -1,0 +1,24 @@
+# theme.toml template for a Hugo theme
+# See https://github.com/gohugoio/hugoThemes#themetoml for an example
+
+name = "Webstack Hugo Theme"
+license = "MIT"
+licenselink = "https://github.com/senzyo/webstack-hugo/blob/master/LICENSE"
+description = "Webstack Hugo theme"
+homepage = "https://github.com/senzyo/webstack-hugo"
+demosite = "https://nav.senzyo.net/"
+tags = ["startpage", "webstack", "links", "nav"]
+features = []
+
+[author]
+  name = "senzyo"
+  homepage = "https://github.com/senzyo/webstack-hugo"
+
+[original]
+  name = "senzyo"
+  homepage = "https://github.com/senzyo/webstack-hugo"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.160.0"

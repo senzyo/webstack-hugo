@@ -1,0 +1,468 @@
+/* ============================================================
+ * Sidebar — 侧边栏导航
+ *
+ * 状态矩阵 (布局层, 各状态互斥) :
+ *   桌面 (min-width:768px)
+ *     ├ 展开   默认 `.sidebar-menu` (无额外类)
+ *     └ 收缩   `.sidebar-menu.collapsed` (仅图标, 悬停/聚焦弹出二级菜单)
+ *   移动 (max-width:767px)
+ *     ├ 收缩   默认: 仅顶部 header (logo + 汉堡) , `.main-menu` 隐藏
+ *     └ 展开   `.main-menu.menu-open` (下拉面板)
+ *
+ * 交互高亮 (见第 2 节, 与状态解耦) :
+ *   鼠标 hover `:hover`         → 仅 @media (hover: hover) (避免触屏粘滞 hover)
+ *   触摸 press `:active`        → 仅 @media (hover: none) (手指按下即高亮)
+ *   键盘 focus `:focus-visible` → 始终生效 (底色 + 全局 outline 指示)
+ *   三通道共用同一组 `--bg-sidebar-hover` / `--text-sidebar-hover`, 视觉统一
+ * ============================================================ */
+
+/* ------------------------------------------------------------
+ * 1. 基础 —— 桌面展开态 (默认)
+ *    同时是所有状态的公共骨架, 收缩/移动态在其上做增量覆盖
+ * ------------------------------------------------------------ */
+
+/* --- 外壳: 与 .main-content 以 table-cell 并列 --- */
+.sidebar-menu {
+  display: table-cell;
+  position: relative;
+  width: 250px;
+  background: var(--bg-sidebar);
+  z-index: 1;
+}
+
+/* --- logo 区 --- */
+.sidebar-menu .logo-env {
+  padding: 19px 30px;
+}
+
+.sidebar-menu .logo-env .logo {
+  float: left;
+}
+
+.sidebar-menu .logo-env .logo .logo-collapsed {
+  display: none;
+}
+
+.sidebar-menu .logo-env .logo .logo-expanded .logo-dark {
+  display: none;
+}
+
+body.black .sidebar-menu .logo-env .logo .logo-expanded .logo-light {
+  display: none;
+}
+
+body.black .sidebar-menu .logo-env .logo .logo-expanded .logo-dark {
+  display: inline-block;
+}
+
+/* --- 菜单 --- */
+.sidebar-menu .main-menu {
+  padding: 0 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.sidebar-menu .main-menu a {
+  display: block;
+  padding: 13px 5px;
+  color: var(--text-sidebar-link);
+  text-decoration: none;
+  transition: all var(--motion);
+}
+
+.sidebar-menu .main-menu a > .icon {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.sidebar-menu .main-menu a > .icon + span {
+  padding-right: 10px;
+}
+
+.sidebar-menu .main-menu a > span {
+  display: inline-block;
+}
+
+.sidebar-menu .main-menu > li > a {
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+/* --- 当前项: 底色 + 强调色, 四种状态下视觉统一 --- */
+.sidebar-menu .main-menu li.active > a {
+  color: var(--text-sidebar-active);
+  background-color: var(--bg-sidebar-active);
+}
+
+/* --- 二级菜单箭头 --- */
+.sidebar-menu .main-menu li.has-submenu > a:before {
+  content: "";
+  float: right;
+  margin-top: 4px;
+  width: 8px;
+  height: 8px;
+  border: solid var(--text-sidebar-muted);
+  border-width: 0 2px 2px 0;
+  padding: 3px;
+  transform: rotate(-45deg);
+  transition: transform 150ms ease-in-out;
+}
+
+.sidebar-menu .main-menu li.has-submenu.expanded > a:before {
+  transform: rotate(45deg);
+}
+
+/* --- 二级菜单 --- */
+.sidebar-menu .main-menu ul {
+  display: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+  border-radius: 8px;
+}
+
+.sidebar-menu .main-menu ul li {
+  position: relative;
+}
+
+.sidebar-menu .main-menu ul li a {
+  padding-left: 35px;
+  border-radius: 8px;
+}
+
+/* --- fixed 布局 --- */
+.sidebar-menu.fixed {
+  height: 100%;
+}
+
+.sidebar-menu.fixed .sidebar-menu-inner {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: inherit;
+  overflow: hidden;
+}
+
+/* --- 滚动条 (主题联动)  --- */
+.sidebar-menu-inner {
+  overflow-y: auto;
+  height: 100%;
+  scrollbar-width: thin;
+  scrollbar-color: var(--sidebar-scrollbar) transparent;
+}
+
+.sidebar-menu-inner::-webkit-scrollbar {
+  width: 4px;
+}
+
+.sidebar-menu-inner::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-menu-inner::-webkit-scrollbar-thumb {
+  background: var(--sidebar-scrollbar);
+  border-radius: 2px;
+}
+
+/* --- 滚动指示条 (JS 控制)  --- */
+.sidebar-scroll-indicator {
+  position: fixed;
+  pointer-events: none;
+  z-index: 5;
+  width: 4px;
+  border-radius: 2px;
+  background: var(--sidebar-scrollbar);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+/* ------------------------------------------------------------
+ * 2. 交互高亮 —— 鼠标 / 触摸 / 键盘三通道视觉统一
+ *    注: 收缩态专属的 flyout 触发与图标上移动画保留在第 3 节
+ * ------------------------------------------------------------ */
+
+/* 关闭系统默认触屏点击闪光, 统一走我们的底色反馈 */
+.sidebar-menu a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* 鼠标悬停 —— 仅指针类鼠标 (防止触屏产生粘滞 hover)  */
+@media (hover: hover) {
+  .sidebar-menu .main-menu a:hover {
+    color: var(--text-sidebar-hover);
+    background-color: var(--bg-sidebar-hover);
+  }
+
+  .sidebar-menu .mobile-menu-toggle a:hover {
+    color: var(--text-sidebar-hover);
+  }
+}
+
+/* 触摸按压 —— 手指按下即高亮 */
+@media (hover: none) {
+  .sidebar-menu .main-menu a:active {
+    color: var(--text-sidebar-hover);
+    background-color: var(--bg-sidebar-hover);
+  }
+
+  .sidebar-menu .mobile-menu-toggle a:active {
+    color: var(--text-sidebar-hover);
+  }
+}
+
+/* 键盘焦点 —— 与悬停同一底色, 保留全局 outline 指示位置 */
+.sidebar-menu .main-menu a:focus-visible {
+  color: var(--text-sidebar-hover);
+  background-color: var(--bg-sidebar-hover);
+}
+
+.sidebar-menu .mobile-menu-toggle a:focus-visible {
+  color: var(--text-sidebar-hover);
+}
+
+/* ------------------------------------------------------------
+ * 3. 桌面收缩态 —— .sidebar-menu.collapsed (min-width:768px)
+ *    布局: 窄栏 + flyout 二级菜单
+ *    触发: 鼠标悬停 / 键盘聚焦 (:focus-within) 均可打开 flyout
+ * ------------------------------------------------------------ */
+@media screen and (min-width: 768px) {
+  /* --- 窄栏布局 --- */
+  .sidebar-menu.collapsed {
+    width: 80px;
+    z-index: 10;
+    overflow: visible;
+  }
+
+  /* 隐藏原生滚动条: 其条带会拦截 hover, 导致慢速移向 flyout 时
+     li:hover 中断、flyout 收起。滚动能力由 overflow-y:auto 保留,
+     位置反馈由右侧 4px 指示条承担 */
+  .sidebar-menu.collapsed .sidebar-menu-inner {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: fixed;
+    scrollbar-width: none;
+    /* 高于右侧指示条(z-index:5): inner 为 position:fixed 自建堆叠上下文,
+       flyout 的 z-index 只在其内部生效, 须把整个 inner 抬到指示条之上 */
+    z-index: 6;
+  }
+
+  .sidebar-menu.collapsed .sidebar-menu-inner::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sidebar-menu.collapsed .logo-env {
+    padding: 19px 0;
+  }
+
+  .sidebar-menu.collapsed .logo-env .logo-collapsed {
+    display: block;
+    text-align: center;
+  }
+
+  .sidebar-menu.collapsed .logo-env .logo-collapsed img {
+    display: inline-block;
+  }
+
+  .sidebar-menu.collapsed .logo-env .logo-expanded {
+    display: none;
+  }
+
+  .sidebar-menu.collapsed .logo-env .logo {
+    float: none;
+  }
+
+  .sidebar-menu.collapsed .main-menu {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li {
+    text-align: center;
+    position: relative;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li > a > .icon {
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li > a > span {
+    display: none;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li.has-submenu > a:before {
+    display: none;
+  }
+
+  .sidebar-menu.collapsed .sidebar-scroll-indicator {
+    opacity: 1;
+    left: 76px;
+  }
+
+  /* --- flyout 二级菜单 --- */
+  /* left 需与悬停列重叠, 否则滚动条压窄列宽后图标与 flyout 之间会出现
+     悬停缝隙, 鼠标跨越时 flyout 会先收起 (设备模拟下尤其明显)  */
+  .sidebar-menu.collapsed .main-menu > li > ul {
+    position: fixed;
+    background: var(--bg-sidebar);
+    width: 260px;
+    top: 0;
+    left: 76px;
+    text-align: left;
+  }
+
+  /* 打开条件: 鼠标悬停 / 键盘聚焦 */
+  .sidebar-menu.collapsed .main-menu > li:hover > ul,
+  .sidebar-menu.collapsed .main-menu > li:focus-within > ul {
+    display: block;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li > ul > li > a {
+    padding-left: 20px;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li > ul > li > ul > li > a {
+    padding-left: 35px;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li > ul > li > ul > li > ul > li > a {
+    padding-left: 50px;
+  }
+
+  /* --- 收缩态按钮: 悬停时图标上移、文字滑出 --- */
+  .collapsed .main-menu > li > a {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li > a {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .collapsed .main-menu > li > a > .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding: 13px;
+    top: 0;
+    left: 0;
+    position: absolute;
+    transition: top 0.25s ease-in-out;
+  }
+
+  .collapsed .main-menu > li > a > span:first-of-type {
+    display: -webkit-box !important;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    bottom: 36px;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    transition: 0.25s ease-in-out;
+  }
+
+  .collapsed .main-menu > li > a:hover > .icon {
+    top: 100%;
+  }
+
+  .collapsed .main-menu > li > a:hover > span:first-of-type {
+    bottom: 0;
+  }
+}
+
+/* ------------------------------------------------------------
+ * 4. 移动端 —— (max-width:767px)
+ *    收缩默认: 侧边栏变为顶部 header (logo + 汉堡) , 菜单隐藏
+ *    展开态: .main-menu.menu-open 下拉面板
+ * ------------------------------------------------------------ */
+@media screen and (max-width: 767px) {
+  /* --- 外壳: 占满顶部, 作为 header --- */
+  .sidebar-menu,
+  .sidebar-menu.fixed {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+  }
+
+  .sidebar-menu-inner,
+  .sidebar-menu.fixed .sidebar-menu-inner {
+    position: relative;
+  }
+
+  /* --- header (logo + 汉堡)  --- */
+  .sidebar-menu .logo-env {
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 42px;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-menu-toggle {
+    margin-left: auto;
+  }
+
+  .mobile-menu-toggle a {
+    position: relative;
+    display: inline-block;
+    color: var(--text-sidebar-link);
+    line-height: 1;
+    margin-left: 20px;
+  }
+
+  /* --- 收缩默认: 菜单隐藏 --- */
+  .sidebar-menu .main-menu {
+    display: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .sidebar-menu .main-menu > li > a {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  /* --- 展开态: .menu-open 下拉面板 --- */
+  .sidebar-menu .main-menu.menu-open {
+    display: block;
+    max-height: calc(100vh - 61px);
+    max-height: calc(100dvh - 61px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--sidebar-scrollbar) transparent;
+  }
+
+  .sidebar-menu .main-menu.menu-open::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .sidebar-menu .main-menu.menu-open::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .sidebar-menu .main-menu.menu-open::-webkit-scrollbar-thumb {
+    background: var(--sidebar-scrollbar);
+    border-radius: 2px;
+  }
+}

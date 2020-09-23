@@ -1,0 +1,62 @@
+/* ============================================================
+ * Layout — Page structure, main content area, spacing
+ * ============================================================ */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.page-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+}
+
+.page-container .main-content {
+  display: table-cell;
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  padding-bottom: 0;
+  vertical-align: top;
+  word-break: break-word;
+  width: 100%;
+  transition: opacity 100ms ease-in-out;
+}
+
+/* --- spacing --- */
+.no-search {
+  margin-top: 85px;
+}
+
+.sites-list {
+  margin-bottom: 8.5rem;
+}
+
+@media (min-width: 768px) {
+  .sites-list {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .page-container {
+    display: block;
+  }
+
+  .page-container .main-content {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50px;
+  }
+}

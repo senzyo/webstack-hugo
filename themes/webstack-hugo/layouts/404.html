@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Locale }}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404</title>
+    <link rel="icon" href="favicon.ico" sizes="48x48">
+    <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+    <style type="text/css">
+        :root {
+            color-scheme: light;
+            --bg-404: #f3eddb;
+            --text-404: #000000;
+        }
+
+        body.black {
+            color-scheme: dark;
+            --bg-404: #000000;
+            --text-404: #ffffff;
+        }
+
+        body {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            background: var(--bg-404);
+            color: var(--text-404);
+        }
+
+        div {
+            position: absolute;
+            font-size: 8rem;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body class="black">
+    <script>
+        (function(){ if(localStorage.getItem('theme')==='light') document.body.classList.remove('black'); })();
+    </script>
+    <div>4 0 4</div>
+</body>
+
+</html>

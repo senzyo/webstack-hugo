@@ -1,0 +1,40 @@
+baseURL = "https://nav.senzyo.net/"
+locale = "zh-Hans"
+title = "SenZyo 导航"
+theme = "webstack-hugo"
+disablePathToLower = true
+hasCJKLanguage = true
+enableRobotsTXT = true
+disableKinds = ['rss', 'taxonomy', 'term']
+
+[params]
+  description = "使用 Webstack Hugo 的导航站"
+  # Open Graph 与 Twitter Card 预览图
+  images = ['/images/Preview.png']
+  # 右上角 GitHub 链接, 置空隐藏
+  github = "https://github.com/senzyo/webstack-hugo"
+
+[params.footer]
+  copyright = true
+  since = "2020"
+  # 页脚追加内容, 支持 HTML
+  custom = ''
+
+[params.search]
+  enable = true
+  duckduckgo = true
+  google = true
+  bing = true
+  metaso = false
+  perplexity = false
+  yandex = false
+  baidu = true
+
+[params.verification]
+  google = ""
+  bing = ""
+  yandex = ""
+  pinterest = ""
+  baidu = ""
+  so = ""
+  sogou = ""

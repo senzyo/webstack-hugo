@@ -1,0 +1,156 @@
+/* ============================================================
+ * Base — Reset, global styles, utilities, scrollbar
+ * ============================================================ */
+
+/* --- reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- theme transition (only while a theme switch is in flight) --- */
+body.theme-transition,
+body.theme-transition *,
+body.theme-transition *::before,
+body.theme-transition *::after {
+  transition:
+    background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    fill 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- view transition: circular reveal for theme toggle --- */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-new(root) {
+  animation: theme-reveal 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes theme-reveal {
+  from {
+    clip-path: circle(0px at var(--vt-x, 50%) var(--vt-y, 50%));
+  }
+  to {
+    clip-path: circle(var(--vt-r, 150%) at var(--vt-x, 50%) var(--vt-y, 50%));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.theme-transition,
+  body.theme-transition *,
+  body.theme-transition *::before,
+  body.theme-transition *::after {
+    transition: none !important;
+  }
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family:
+    sans-serif, "Noto Color Emoji", "Apple Color Emoji", "Segoe UI Emoji";
+  background-color: var(--bg-page);
+  color: var(--text-base);
+}
+
+/* --- global text --- */
+a {
+  color: var(--text-link);
+  outline: none;
+  text-decoration: none;
+}
+
+a:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -1px;
+  border-radius: 8px;
+}
+
+a:hover,
+a:focus-visible {
+  color: var(--text-link-hover);
+  text-decoration: none;
+}
+
+p {
+  color: var(--text-body);
+}
+
+.text-gray {
+  color: var(--text-muted);
+}
+
+h4.text-gray {
+  display: inline-block;
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+/* --- icons --- */
+.icon {
+  display: inline-block;
+  vertical-align: -0.125em;
+  flex-shrink: 0;
+}
+
+/* --- utilities --- */
+.img-square {
+  border-radius: 18%;
+}
+
+/* 仅在桌面端 (≥768px) 显示 */
+.desktop-only {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .desktop-only {
+    display: block;
+  }
+}
+
+/* 仅在移动端 (<768px) 显示 */
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+/* --- clearfix --- */
+.sidebar-menu .logo-env:after,
+footer.main-footer .footer-inner:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* --- heading icon alignment --- */
+h4 > .icon {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.main-menu .icon,
+.main-menu a > .icon {
+  margin-right: 10px;
+  width: 1em;
+  text-align: center;
+}

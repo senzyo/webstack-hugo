@@ -1,0 +1,5 @@
+{{ $icon := . }}{{ with index hugo.Data.icons $icon }}
+<svg class="icon" aria-hidden="true" width="1em" height="1em" fill="currentColor">
+  <use href="#{{ $icon }}"/>
+</svg>
+{{ end }}

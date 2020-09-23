@@ -1,0 +1,76 @@
+/* ============================================================
+ * Footer — Page footer, GitHub corner
+ * ============================================================ */
+
+/* --- footer --- */
+footer.main-footer {
+  padding: 20px 30px;
+  border-top: 0;
+  font-size: 12px;
+  margin-left: -30px;
+  margin-right: -30px;
+  margin-top: 0;
+  background-color: var(--bg-page);
+}
+
+footer.main-footer .footer-text {
+  float: left;
+}
+
+/* --- collapsed sidebar effect on footer --- */
+@media screen and (min-width: 768px) {
+  .sidebar-menu.collapsed + .main-content .main-footer {
+    left: 80px;
+  }
+}
+
+/* --- mobile --- */
+@media screen and (max-width: 767px) {
+  .page-container .main-content .main-footer {
+    position: relative;
+    left: 0;
+    right: auto;
+  }
+}
+
+/* --- GitHub corner --- */
+.github-corner-svg {
+  fill: var(--github-corner-fill);
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+
+.github-corner .octo-arm {
+  transform-origin: 130px 106px;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}

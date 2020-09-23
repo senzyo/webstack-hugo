@@ -1,0 +1,7 @@
+# 明确指定文件为二进制, 防止任何换行符转换
+*.ico binary
+*.jpg binary
+*.png binary
+
+# 明确指定 bash 脚本使用 LF 换行符
+check_urls.sh text eol=lf

@@ -1,0 +1,92 @@
+/* ============================================================
+ * Navbar — Top navigation bar (top-nav)
+ * ============================================================ */
+
+.top-nav {
+  background-color: var(--bg-navbar);
+  min-height: 0;
+  border: 0;
+  padding: 0;
+  margin: -30px;
+  margin-bottom: 60px;
+}
+
+.top-nav .top-nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-nav .top-nav-menu.left-links {
+  flex-shrink: 0;
+  width: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-nav .top-nav-menu li {
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.top-nav .top-nav-menu li a {
+  line-height: 1;
+}
+
+.top-nav .top-nav-menu > li > a {
+  display: block;
+  padding: 18px 10px;
+  color: var(--text-link);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.top-nav .top-nav-menu > li > a .icon {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.top-nav .top-nav-menu > li > a:hover {
+  color: var(--text-link-hover);
+}
+
+.top-nav .top-nav-menu > li a[data-action="toggle-sidebar"] {
+  padding: 15px;
+}
+
+/* --- fixed navbar --- */
+nav.top-nav {
+  position: fixed;
+  z-index: 2000 !important;
+  right: 30px;
+  width: 100%;
+  padding: 0 0 0 250px;
+  background-color: transparent;
+  border: 0;
+}
+
+.top-nav .top-nav-content {
+  position: absolute;
+  background: var(--bg-navbar);
+  width: 100%;
+  box-shadow: var(--shadow-navbar);
+  padding-bottom: 1px;
+  display: flex;
+  align-items: stretch;
+}
+
+/* --- collapsed sidebar effect on navbar --- */
+@media screen and (min-width: 768px) {
+  .sidebar-menu.collapsed + .main-content > nav.top-nav {
+    padding-left: 80px;
+  }
+}
+
+/* --- mobile --- */
+@media screen and (max-width: 767px) {
+  .page-container .main-content .top-nav {
+    display: none;
+  }
+}
