@@ -364,6 +364,11 @@
           url: https://olocr.com/
           description: "在线OCR"
 
+        - title: SimpleTex
+          logo: images/logos/Default.svg
+          url: https://simpletex.cn/ai/latex_ocr
+          description: "主打LaTeX识别"
+
     - term: PDF
       icon: fa-file-pdf-o
       links:
@@ -2479,11 +2484,6 @@
       url: https://senzyo.net/
       description: "本人的博客"
 
-    - title: MetaCubeXD
-      logo: images/logo.svg
-      url: https://clash.senzyo.net/
-      description: 
-
     - title: 思维导图
       logo: images/logo.svg
       url: https://mindmap.senzyo.net/
@@ -2494,17 +2494,7 @@
       url: https://rename.senzyo.net/
       description: "在线批量重命名文件"
 
-    - title: sing-box配置生成
-      logo: images/logo.svg
-      url: https://sing-box.senzyo.net/
-      description: 
-
     - title: 视频解析
       logo: images/logo.svg
       url: https://video.senzyo.net/
-      description: 
-
-    - title: yacd
-      logo: images/logo.svg
-      url: https://yacd.senzyo.net/
       description: 
