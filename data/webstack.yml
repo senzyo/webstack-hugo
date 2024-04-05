@@ -950,6 +950,11 @@
           url: https://imgbin.com/
           description: "免扣图素材"
 
+        - title: PNGDirs
+          logo: images/logos/Default.svg
+          url: https://www.pngdirs.com/
+          description: "免扣图素材"
+
         - title: Wallhaven
           logo: images/logos/Wallhaven.svg
           url: https://wallhaven.cc/
@@ -1292,6 +1297,11 @@
           logo: images/logos/PixFix.svg
           url: https://pixfix.com/
           description: "图像修复"
+
+        - title: AI HD Anime
+          logo: images/logos/Default.svg
+          url: https://aihdanime.com/zh
+          description: "二次元图片智能放大"
 
         - title: Let's Enhance
           logo: images/logos/Let'sEnhance.svg
@@ -2067,7 +2077,7 @@
 - taxonomy: 音频
   icon: fa-music
   list: 
-    - term: 音乐搜索
+    - term: 音频搜索
       icon: fa-music
       links:
         - title: GNOOSIC
@@ -2109,6 +2119,11 @@
           logo: images/logos/Default.svg
           url: http://www.acgjc.com/
           description: "动漫无损音乐下载"
+
+        - title: FindSounds
+          logo: images/logos/Default.svg
+          url: https://www.findsounds.com/typesChinese.html
+          description: "一百多万种音效和乐器采样"
 
     - term: 音频处理
       icon: fa-fast-forward
@@ -2204,14 +2219,19 @@
           url: https://www.8bei8.com/
           description: 
 
-        - title: 可阅文学网
+        - title: 识典古籍
           logo: images/logos/Default.svg
-          url: https://kepub.net/
+          url: https://www.shidianguji.com/
           description: 
 
         - title: 古书网
           logo: images/logos/Default.svg
           url: https://gushu.net.cn/
+          description: 
+
+        - title: 可阅文学网
+          logo: images/logos/Default.svg
+          url: https://kepub.net/
           description: 
 
         - title: 汇书网
@@ -2315,7 +2335,12 @@
         - title: 人物志
           logo: images/logos/Default.svg
           url: https://renwuzhi.wiki/
-          description: "收录先秦至今约41.7万人"
+          description: "收录先秦至今数十万人"
+
+        - title: 历史年轮
+          logo: images/logos/Default.svg
+          url: https://www.yearsmap.com/
+          description: "历史事件线+人物志"
 
         - title: 皮影数字博物馆
           logo: images/logos/Default.svg
