@@ -532,6 +532,11 @@
     - term: 网络测速
       icon: fa-tachometer
       links:
+        - title: 网络测速面板
+          logo: images/logos/Default.svg
+          url: https://ljxi.github.io/NetworkPanel/
+          description: 
+
         - title: SpeedTest
           logo: images/logos/SpeedTest.svg
           url: https://www.speedtest.net/
