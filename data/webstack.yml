@@ -552,14 +552,34 @@
           url: https://10000.gd.cn/
           description: 
 
-        - title: 中国科学技术大学测速网站
+        - title: 东北大学网络测速
+          logo: images/logos/Default.svg
+          url: https://speed.neu.edu.cn/
+          description: 
+
+        - title: 南京大学网络测速
+          logo: images/logos/Default.svg
+          url: https://test.nju.edu.cn/
+          description: 
+
+        - title: 南京航空航天大学网络测速
+          logo: images/logos/Default.svg
+          url: http://speed.nuaa.edu.cn/
+          description: 
+
+        - title: 上海大学网络测速
+          logo: images/logos/Default.svg
+          url: https://speedtest.shu.edu.cn/
+          description: 
+
+        - title: 中国科学技术大学网络测速
           logo: images/logos/Default.svg
           url: https://test.ustc.edu.cn/
           description: 
 
-        - title: 南京大学测速站
+        - title: 浙江大学网络测速
           logo: images/logos/Default.svg
-          url: https://test.nju.edu.cn/
+          url: http://speedtest.zju.edu.cn/
           description: 
 
     - term: 机场和VPS
