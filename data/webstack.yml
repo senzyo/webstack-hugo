@@ -1672,6 +1672,11 @@
           url: https://www.anfuns.cc/
           description: 
 
+        - title: 路漫漫
+          logo: images/logos/Default.svg
+          url: https://m.lmm52.com/
+          description: "发布页: web.qg50.com"
+
     - term: 动漫下载
       icon: fa-download
       links:
@@ -2016,6 +2021,11 @@
     - term: 视频下载
       icon: fa-download
       links:
+        - title: TiQu
+          logo: images/logos/Default.svg
+          url: https://tiqu.cc/
+          description: "支持国内外一堆视频网站"
+
         - title: 微博秒拍视频图片下载
           logo: images/logos/iiilab.svg
           url: https://weibo.iiilab.com/
@@ -2487,6 +2497,11 @@
           logo: images/logos/Default.svg
           url: https://ziwei.pub/
           description: "轻量级紫微斗数排盘工具库"
+
+        - title: LosePrivacy
+          logo: images/logos/Default.svg
+          url: https://loseprivacy.sbs/?lp=NDE2MzIy
+          description: "社工库, 只允许中国IP访问。发布页: web.losedh.cyou"
 
     - term: 杂项
       icon: fa-pagelines
