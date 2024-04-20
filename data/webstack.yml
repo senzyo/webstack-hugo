@@ -707,6 +707,11 @@
     - term: 站长工具
       icon: fa-sitemap
       links:
+        - title: IP计算器
+          logo: images/logos/Jisuanqi.svg
+          url: https://ipjisuanqi.com/
+          description: "专业计算IP相关"
+
         - title: 站长工具
           logo: images/logos/ChinaZ.svg
           url: https://tool.chinaz.com/tools/nav
@@ -717,34 +722,39 @@
           url: https://www.itdog.cn/
           description: 
 
-        - title: IP计算器
-          logo: images/logos/Jisuanqi.svg
-          url: https://ipjisuanqi.com/
-          description: "专业计算IP相关"
-
-        - title: ipleak.net
-          logo: images/logos/Default.svg
-          url: https://ipleak.net/
-          description: "IP泄露测试"
-
-        - title: Test-IPv6
-          logo: images/logos/Default.svg
-          url: https://test-ipv6.com/
-          description: "测试IPv6支持"
-
         - title: Ping0
           logo: images/logos/Default.svg
           url: https://ping0.cc/
+          description: "关于IP的具体信息"
+
+        - title: 埃文
+          logo: images/logos/Default.svg
+          url: https://www.ipuu.net/
+          description: "高精度IP定位"
+
+        - title: IPv6工具箱
+          logo: images/logos/Default.svg
+          url: https://ipw.cn/
+          description: 
+
+        - title: Test-IPv6
+          logo: images/logos/Default.svg
+          url: https://testipv6.cn/
+          description: "测试IPv6支持"
+
+        - title: IPv6.stream
+          logo: images/logos/Default.svg
+          url: https://ipv6.stream/
+          description: "IPv6测试聚合站"
+
+        - title: IPCheck.ing
+          logo: images/logos/Default.svg
+          url: https://ipcheck.ing/
           description: "关于IP的多种测试"
 
         - title: Sukka IP
           logo: images/logos/Default.svg
           url: https://ip.skk.moe/
-          description: "关于IP的多种测试"
-
-        - title: IPCheck.ing
-          logo: images/logos/Default.svg
-          url: https://ipcheck.ing/
           description: "关于IP的多种测试"
 
         - title: USTC IP Blacklist
@@ -756,11 +766,6 @@
           logo: images/logos/Default.svg
           url: https://scamalytics.com/
           description: "脏IP检测"
-
-        - title: 埃文
-          logo: images/logos/Default.svg
-          url: https://www.ipuu.net/
-          description: "高精度IP定位"
 
         - title: Whois Lookup
           logo: images/logos/Whois.svg
@@ -1892,6 +1897,11 @@
           url: http://www.futa404.org/
           description: "一个ACGN综合站, 与futa无关"
 
+        - title: 新番列表
+          logo: images/logos/Default.svg
+          url: https://www.miroko.cn/
+          description: 
+
         - title: Bangumi番组计划
           logo: images/logos/Default.svg
           url: https://bgm.tv/calendar
@@ -2262,6 +2272,11 @@
         - title: 古书网
           logo: images/logos/Default.svg
           url: https://gushu.net.cn/
+          description: 
+
+        - title: 飞库文学网
+          logo: images/logos/Default.svg
+          url: https://www.feiku6.com/
           description: 
 
         - title: 可阅文学网
