@@ -56,6 +56,11 @@
       url: https://gemini.google.com/
       description: 
 
+    - title: Hugging Face
+      logo: images/logos/HuggingFace.svg
+      url: https://huggingface.co/
+      description: 
+
     - title: Kimi
       logo: images/logos/Moonshot-Kimi.svg
       url: https://kimi.moonshot.cn/chat/
@@ -1883,6 +1888,11 @@
           logo: images/logos/Default.svg
           url: https://www.oskarstalberg.com/Townscaper/
           description: "著名城镇建造小游戏的网页版"
+
+        - title: Chess.com
+          logo: images/logos/Default.svg
+          url: https://www.chess.com/zh
+          description: "在线国际象棋"
 
     - term: 其他
       icon: fa-leaf
