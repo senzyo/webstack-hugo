@@ -48,7 +48,7 @@
   links: 
     - title: ChatGPT
       logo: images/logos/OpenAI-ChatGPT.svg
-      url: https://chat.openai.com/
+      url: https://chatgpt.com/
       description: 
 
     - title: Gemini
@@ -2129,6 +2129,11 @@
           url: https://godlucky.net/whisperapp/
           description: "免费离线免安装多语言AI语音转字幕工具"
 
+        - title: 字幕工具箱
+          logo: images/logos/Default.svg
+          url: https://zm.i8k.tv/
+          description: 
+
 - taxonomy: 音频
   icon: fa-music
   list: 
@@ -2377,6 +2382,11 @@
           url: https://www.xungushici.com/
           description: 
 
+        - title: AsPoem
+          logo: images/logos/Default.svg
+          url: https://aspoem.com/zh-Hans
+          description: "现代化诗词学习网站"
+
         - title: 中国家谱知识服务平台
           logo: images/logos/Default.svg
           url: https://jiapu.library.sh.cn/
@@ -2385,7 +2395,7 @@
         - title: 历史车轮
           logo: images/logos/Default.svg
           url: https://www.lishichelun.com/
-          description: 
+          description: "历史·数据·可视化"
 
         - title: MyLens
           logo: images/logos/Default.svg
@@ -2401,6 +2411,11 @@
           logo: images/logos/Default.svg
           url: https://www.yearsmap.com/
           description: "历史事件线+人物志"
+
+        - title: CBDB
+          logo: images/logos/Default.svg
+          url: https://projects.iq.harvard.edu/chinesecbdb
+          description: "中国历代人物传记资料库"
 
         - title: 皮影数字博物馆
           logo: images/logos/Default.svg
