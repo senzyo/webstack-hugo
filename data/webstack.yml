@@ -782,6 +782,11 @@
           url: https://lookup.icann.org/zh
           description: "域名注册数据查询工具"
 
+        - title: NameBeta
+          logo: images/logos/Default.svg
+          url: https://namebeta.com/
+          description: "比较域名在多个注册商的价格"
+
         - title: Dead Link Checker
           logo: images/logos/Default.svg
           url: https://www.deadlinkchecker.com/
@@ -957,6 +962,11 @@
           url: https://www.misha.studio/snowflaker/
           description: "各种雪花的矢量图"
 
+        - title: 395印章
+          logo: images/logos/Default.svg
+          url: http://we.h12345.com/
+          description: "制作电子版印章"
+
     - term: 图库
       icon: fa-photo
       links:
@@ -968,7 +978,7 @@
         - title: 免扣图片网
           logo: images/logos/Default.svg
           url: https://miankoutupian.com/
-          description:
+          description: 
 
         - title: PngImg
           logo: images/logos/PngImg.svg
@@ -1318,6 +1328,11 @@
           url: https://ezgif.com/
           description: "GIF编辑器"
 
+        - title: 动次
+          logo: images/logos/Default.svg
+          url: https://dongci.kawo.com/
+          description: "最长能转换10秒视频为GIF"
+
         - title: Squoosh
           logo: images/logos/Default.svg
           url: https://squoosh.app/
@@ -1352,6 +1367,11 @@
           logo: images/logos/Default.svg
           url: https://www.upscale.media/
           description: "图片智能放大"
+
+        - title: 无忧相机水印
+          logo: images/logos/Default.svg
+          url: https://camera-watermark.blogwxb.cn/
+          description: "为图片添加相机水印"
 
         - title: Digital Image Process
           logo: images/logos/Default.svg
@@ -2332,7 +2352,12 @@
         - title: CNS学术导航
           logo: images/logos/Default.svg
           url: https://cnspub.com/
-          description:
+          description: 
+
+        - title: 烟海
+          logo: images/logos/Default.svg
+          url: http://www.yanhainav.cn/
+          description: "中国古典学术资源导航"
 
     - term: 文化
       icon: fa-fire
@@ -2380,6 +2405,11 @@
         - title: 寻古诗词
           logo: images/logos/XunGuShiCi.svg
           url: https://www.xungushici.com/
+          description: 
+
+        - title: 海棠诗社
+          logo: images/logos/Default.svg
+          url: https://haitang.app/
           description: 
 
         - title: AsPoem
