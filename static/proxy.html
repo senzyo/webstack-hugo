@@ -188,8 +188,7 @@
 
         function visitWebsite(url) {
             if (url.startsWith('http://') || url.startsWith('https://')) {
-                const modifiedUrl = url.replace(/^(http)(s?):\/\//, '$1$2/');
-                window.open(modifiedUrl, '_blank');
+                window.open(url, '_blank');
             } else {
                 alert('请输入以 http:// 或 https:// 开头的 URL');
             }
