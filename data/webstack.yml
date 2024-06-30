@@ -605,6 +605,21 @@
           url: https://vpsls.com/
           description: "VPS收录"
 
+        - title: Oracle免费套餐
+          logo: images/logos/Default.svg
+          url: https://www.oracle.com/cn/cloud/free/
+          description: "尝试白嫖"
+
+        - title: DNS Leak Test
+          logo: images/logos/Default.svg
+          url: https://browserleaks.com/dns
+          description: 
+
+        - title: WebRTC Leak Test
+          logo: images/logos/Default.svg
+          url: https://browserleaks.com/webrtc
+          description: 
+
     - term: 扫描病毒
       icon: fa-exclamation-triangle
       links:
@@ -1647,6 +1662,11 @@
     - term: 在线动漫
       icon: fa-youtube-play
       links:
+        - title: 樱之空动漫
+          logo: images/logos/Default.svg
+          url: https://www.skr2.cc/
+          description: 
+
         - title: 漫岛
           logo: images/logos/Default.svg
           url: https://www.mandaow.com/
@@ -2076,6 +2096,11 @@
           url: https://dlpanda.com/zh-CN
           description: "支持国内外一堆视频网站"
 
+        - title: SnapAny
+          logo: images/logos/Default.svg
+          url: https://snapany.com/zh
+          description: "支持国内外一堆视频网站"
+
         - title: SnapReels
           logo: images/logos/Default.svg
           url: https://snapreels.net/zh-cn
@@ -2154,6 +2179,24 @@
           url: https://zm.i8k.tv/
           description: 
 
+    - term: 摄像头
+      icon: fa-camera
+      links:
+        - title: WebCamera
+          logo: images/logos/Default.svg
+          url: https://webcamera.cc/zh
+          description: "基于WebRTC的实时监控"
+
+        - title: uIPCat
+          logo: images/logos/Default.svg
+          url: https://uipcat.cn/
+          description: "基于WebRTC的实时监控"
+
+        - title: Skyline
+          logo: images/logos/Default.svg
+          url: https://www.skylinewebcams.com/
+          description: "全球景点实况摄像头"
+
 - taxonomy: 音频
   icon: fa-music
   list: 
@@ -2164,6 +2207,11 @@
           logo: images/logos/Gnoosic.svg
           url: https://www.gnoosic.com/faves.php
           description: "智能查找音乐"
+
+        - title: Audioatlas
+          logo: images/logos/Default.svg
+          url: https://www.audioatlas.com/
+          description: "自然语言搜索引擎检索音乐"
 
         - title: Tune Find
           logo: images/logos/TuneFind.svg
@@ -2199,6 +2247,11 @@
           logo: images/logos/Default.svg
           url: http://www.acgjc.com/
           description: "动漫无损音乐下载"
+
+        - title: 果核音乐
+          logo: images/logos/Default.svg
+          url: https://ghyinyue.com/
+          description: "每用户每日可下载20首无损音乐"
 
         - title: FindSounds
           logo: images/logos/Default.svg
@@ -2499,11 +2552,6 @@
           logo: images/logos/Default.svg
           url: https://emojied.net/
           description: "将你的网址用emoji来代替"
-
-        - title: Skyline
-          logo: images/logos/Default.svg
-          url: https://www.skylinewebcams.com/
-          description: "全球景点实况摄像头"
 
         - title: Radio Garden
           logo: images/logos/Default.svg
