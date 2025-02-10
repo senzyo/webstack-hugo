@@ -16,6 +16,9 @@ disableKinds = ['rss']
   # GitHub link in the upper right corner of pages. Set empty to hide the icon.
   github = "https://github.com/senzyo-desu/webstack-hugo"
 
+[params.darkmode]
+  enable = true
+
 [params.footer]
   copyright = true
   since = "2020"

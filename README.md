@@ -8,7 +8,7 @@ This is a modified version of [webstack-hugo-v2.0rc2](https://github.com/iplayco
 
 - [x] Replaced the display icon of website with SVG format. All icons are drawn by me. Some websites use the [default icon](static/images/Default.svg).
 - [x] Supports custom icons for submenus.
-- [x] Uses a floating button to switch to dark mode instead of specifying dark mode in `config.toml`.
+- [x] ~~Uses a floating button to switch to dark mode instead of specifying dark mode in `config.toml`.~~
 - [x] Fixed the search bar to the top bar.
 - [x] Supports custom search engines.
 - [x] Supports website ownership verification through `<meta>` tags.

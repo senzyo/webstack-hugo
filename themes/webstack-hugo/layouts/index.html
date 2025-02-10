@@ -42,7 +42,7 @@
     <script type='text/javascript' src='./assets/js/jquery-1.12.4.min.js'></script>
 </head>
 
-<body class="page-body white">
+<body class="page-body {{ if .Site.Params.darkmode.enable }}black{{ else }}white{{ end }}">
     <div class="page-container">
         <div class="sidebar-menu toggle-others fixed">
             <div class="sidebar-menu-inner">
@@ -263,11 +263,11 @@
                         <i class="fa fa-angle-up"></i>
                     </a>
                 </div>
-                <div id="theme-switch">
+                <!-- <div id="theme-switch">
                     <a id="theme-button">
                         <i class="fa fa-adjust"></i>
                     </a>
-                </div>
+                </div> -->
                 <div class="footer-inner">
                     <div class="footer-text">
                         <span>Theme&nbsp;<a href="https://github.com/iplaycode" target="_blank" rel="noopener noreffer"><strong>iplaycode</strong></a></span>
@@ -368,7 +368,7 @@
     <script type='text/javascript' src='./assets/js/perfect-scrollbar.min.js?ver=0.5.8'></script>
     <script type='text/javascript' src='./assets/js/nav.js?ver=2.0.0'></script>
     <script type='text/javascript' src='./assets/js/lazyload.min.js?ver=2.0.0'></script>
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         const body = document.querySelector('body');
         const modeToggleBtn = document.getElementById('theme-button');
         const currentMode = localStorage.getItem('mode');
@@ -388,7 +388,7 @@
                 localStorage.setItem('mode', 'white');
             }
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
