@@ -26,10 +26,12 @@ disableKinds = ['rss']
   enable = true
   google = true
   bing = true
-  newbing = true
+  metaso=true
+  chatgpt=true
+  perplexity=true
   duckduckgo = false
   yandex = false
-  baidu = true
+  baidu = false
 
 [params.verification]
   google = ""

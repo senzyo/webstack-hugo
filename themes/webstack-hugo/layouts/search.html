@@ -14,15 +14,31 @@
             {{ if ne .Site.Params.search.bing false }}
             <li><input hidden type="radio" name="type" id="type-Bing" value="https://www.bing.com/search?cc=us&setlang=zh-Hans&filt=custom&q=" data-placeholder="Bing 搜索">
                 <label for="type-Bing">
-                    <span style="color:#00809D">Bing</span>
+                    <span style="color:#258FFA">Bing</span>
                 </label>
             </li>
             {{ else }}
             {{ end }}
-            {{ if ne .Site.Params.search.newbing false }}
-            <li><input hidden type="radio" name="type" id="type-NewBing" value="https://www.bing.com/search?showconv=1&sendquery=1&q=" data-placeholder="配备 GPT-4 的 Bing Chat">
-                <label for="type-NewBing">
-                    <span style="color:#2568EB">Bing</span><span style="color:#00809D">Copilot</span>
+            {{ if ne .Site.Params.search.metaso false }}
+            <li><input hidden type="radio" name="type" id="type-Metaso" value="https://metaso.cn/?q=" data-placeholder="秘塔 AI 搜索">
+                <label for="type-Metaso">
+                    <span style="color:#2951C2">秘塔</span>
+                </label>
+            </li>
+            {{ else }}
+            {{ end }}
+            {{ if ne .Site.Params.search.chatgpt false }}
+            <li><input hidden type="radio" name="type" id="type-ChatGPT" value="https://chatgpt.com/search?q=" data-placeholder="ChatGPT 联网搜索">
+                <label for="type-ChatGPT">
+                    <span style="color:#75A99C">ChatGPT</span>
+                </label>
+            </li>
+            {{ else }}
+            {{ end }}
+            {{ if ne .Site.Params.search.perplexity false }}
+            <li><input hidden type="radio" name="type" id="type-Perplexity" value="https://www.perplexity.ai/search?q=" data-placeholder="Perplexity 联网搜索">
+                <label for="type-Perplexity">
+                    <span style="color:#999999">Perplexity</span>
                 </label>
             </li>
             {{ else }}

@@ -51,7 +51,7 @@
       url: https://chatgpt.com/
       description: "须代理"
 
-    - title: Gemini
+    - title: Gemini Ai Studio
       logo: images/logos/Google-Gemini.svg
       url: https://aistudio.google.com/app/prompts/
       description: "须代理"
@@ -65,6 +65,11 @@
       logo: images/logos/Perplexity.svg
       url: https://www.perplexity.ai/
       description: "须代理"
+
+    - title: DeepSeek
+      logo: images/logos/DeepSeek.svg
+      url: https://chat.deepseek.com/
+      description: 
 
     - title: Cici
       logo: images/logos/ByteDance-Cici.png
