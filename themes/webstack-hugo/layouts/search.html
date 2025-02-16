@@ -27,16 +27,8 @@
             </li>
             {{ else }}
             {{ end }}
-            {{ if ne .Site.Params.search.chatgpt false }}
-            <li><input hidden type="radio" name="type" id="type-ChatGPT" value="https://chatgpt.com/search?q=" data-placeholder="ChatGPT 联网搜索">
-                <label for="type-ChatGPT">
-                    <span style="color:#75A99C">ChatGPT</span>
-                </label>
-            </li>
-            {{ else }}
-            {{ end }}
             {{ if ne .Site.Params.search.perplexity false }}
-            <li><input hidden type="radio" name="type" id="type-Perplexity" value="https://www.perplexity.ai/search?q=" data-placeholder="Perplexity 联网搜索">
+            <li><input hidden type="radio" name="type" id="type-Perplexity" value="https://www.perplexity.ai/search/new?q=" data-placeholder="Perplexity 联网搜索">
                 <label for="type-Perplexity">
                     <span style="color:#999999">Perplexity</span>
                 </label>

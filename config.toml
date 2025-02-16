@@ -30,7 +30,6 @@ disableKinds = ['rss']
   google = true
   bing = true
   metaso=true
-  chatgpt=true
   perplexity=true
   duckduckgo = false
   yandex = false
