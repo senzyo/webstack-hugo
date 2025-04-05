@@ -216,6 +216,26 @@
     - term: 临时传输
       icon: fa-exchange
       links:
+        - title: PairDrop
+          logo: images/logos/Default.svg
+          url: https://pairdrop.net/
+          description: 
+
+        - title: Weblink
+          logo: images/logos/Default.svg
+          url: https://webl.ink/
+          description: 
+
+        - title: tl-rtc-file
+          logo: images/logos/Default.svg
+          url: https://im.iamtsm.cn/
+          description: 
+
+        - title: transfer.zip
+          logo: images/logos/Default.svg
+          url: https://transfer.zip/
+          description: 
+
         - title: 钛盘
           logo: images/logos/Tmp.link.svg
           url: https://ttttt.link/
@@ -260,16 +280,6 @@
           logo: images/logos/Default.svg
           url: https://bruh-clips.com/
           description: "仅支持上传MP4视频, 支持在线播放"
-
-        - title: tl-rtc-file
-          logo: images/logos/Default.svg
-          url: https://im.iamtsm.cn/file
-          description: "功能超多的WebRTC开源项目"
-
-        - title: transfer.zip
-          logo: images/logos/Default.svg
-          url: https://transfer.zip/
-          description: "也基于WebRTC"
 
 - taxonomy: 邮箱
   icon: fa-envelope
