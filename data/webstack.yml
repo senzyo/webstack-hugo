@@ -2123,70 +2123,30 @@
           url: https://cupfox.love/
           description: "微信公众号: 茶杯狐"
 
-        - title: 电影淘淘
-          logo: images/logos/Default.svg
-          url: https://www.dytt360.com/
-          description: 
-
-        - title: 蜥蜴影院
-          logo: images/logos/Default.svg
-          url: https://xi1.net/
-          description: 
-
-        - title: 看B站
-          logo: images/logos/Default.svg
-          url: https://kanb.tv/
-          description: 
-
-        - title: 金曼TV
-          logo: images/logos/Default.svg
-          url: https://www.jinman6.com/
-          description: "发布页: www.jinman.cc"
-
         - title: HDmoli
           logo: images/logos/Default.svg
           url: https://www.hdmoli.pro/
-          description: "发布页: www.molicp.com"
+          description: "发布页: molicp.com"
 
         - title: 低端影视
           logo: images/logos/Default.svg
           url: https://ddys.mov/
-          description: "发布页: ddys.info"
+          description: "发布页: ddys.site"
 
         - title: 电影先生
           logo: images/logos/Default.svg
           url: https://dianyi.ng/
-          description: "备用网址: dianying.xianshe.ng"
-
-        - title: 小狗影院
-          logo: images/logos/Default.svg
-          url: https://pupvod.com/
-          description: 
-
-        - title: 缘觉影视
-          logo: images/logos/Default.svg
-          url: https://yjys.inf.ua/
-          description: "发布页: bdys.me"
-
-        - title: 如意视频
-          logo: images/logos/Default.svg
-          url: https://rysp.tv/
-          description: 
+          description: "备用网址: 电影先生.com"
 
         - title: 金牌影院
           logo: images/logos/Default.svg
           url: https://fjvtw.com/
           description: 
 
-        - title: 看美剧影视
+        - title: 筷子影视
           logo: images/logos/Default.svg
-          url: https://kmeiju.com/
+          url: https://www.kzvod.cc/
           description: 
-
-        - title: 剧圈圈
-          logo: images/logos/Default.svg
-          url: https://www.jqqzx.me/
-          description: "发布页: link3.cc/jqqzx"
 
     - term: 视频下载
       icon: fa-download
