@@ -1764,23 +1764,23 @@
       links:
         - title: 樱之空动漫
           logo: images/logos/Default.svg
-          url: https://www.skr1.cc/
+          url: https://www.skr2.cc/
           description: 
 
         - title: AGE动漫
           logo: images/logos/Default.svg
           url: https://www.agedm.org/
-          description: "须直连, 发布页: rentry.la/agefans"
+          description: "发布页: rentry.la/agefans"
 
         - title: 次元城动漫
           logo: images/logos/Default.svg
-          url: https://www.cyc-anime.net/
-          description: "t.me/cycdm"
+          url: https://www.cycani.org/
+          description: "发布页: www.cycity.pro"
 
         - title: ギリギリ愛
           logo: images/logos/Default.svg
           url: https://anime.girigirilove.com/
-          description: "t.me/+z_bwv8ytyb5iNjM1"
+          description: "发布页: girigirilove.top"
 
         - title: 稀饭动漫
           logo: images/logos/Default.svg
@@ -1795,27 +1795,17 @@
         - title: 樱花动漫
           logo: images/logos/Default.svg
           url: https://99dm.tv/
-          description: "发布页: www.88dm.top"
+          description: "发布页: 88dm.fans"
 
         - title: NT动漫
           logo: images/logos/Default.svg
           url: https://www.ntdm.tv/
-          description: 
-
-        - title: 怡萱动漫
-          logo: images/logos/Default.svg
-          url: https://yxdm.tv/
-          description: "发布页: rentrys.cc/yxdm"
+          description: "发布页: www.ntdm.fans"
 
         - title: AcFuns
           logo: images/logos/Default.svg
-          url: https://www.anfuns.org/
+          url: https://www.anfuns.vip/
           description: "t.me/+E4NnPjEZBu01MDJl"
-
-        - title: 路漫漫
-          logo: images/logos/Default.svg
-          url: https://dm.g916.com/
-          description: "发布页: index.qg50.com"
 
     - term: 动漫下载
       icon: fa-download
