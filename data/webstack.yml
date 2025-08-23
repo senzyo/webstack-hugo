@@ -28,21 +28,6 @@
       url: https://www.keybr.com/zh-hans/index
       description: "智能训练打字速度"
 
-    - title: 阿里翻译
-      logo: images/logos/Ali-Translator.svg
-      url: https://translate.alibaba.com/
-      description: "文本/文档/图片/视频/语音翻译"
-
-    - title: 百度翻译
-      logo: images/logos/Baidu-Translator.svg
-      url: https://fanyi.baidu.com/
-      description: "常用的翻译"
-
-    - title: DeepL翻译
-      logo: images/logos/DeepL.svg
-      url: https://www.deepl.com/translator
-      description: "更好的翻译"
-
 - taxonomy: 人工智能
   icon: fa-comments
   links: 
@@ -71,39 +56,14 @@
       url: https://chat.deepseek.com/
       description: 
 
-    - title: Cici
-      logo: images/logos/ByteDance-Cici.png
-      url: https://www.ciciai.com/
-      description: "豆包的国际版, 须代理"
-
     - title: 豆包
       logo: images/logos/ByteDance-Doubao.png
       url: https://www.doubao.com/
       description: 
 
-    - title: Kimi
-      logo: images/logos/Moonshot-Kimi.svg
-      url: https://kimi.moonshot.cn/
-      description: 
-
-    - title: 通义千问
-      logo: images/logos/Ali-Tongyi.svg
-      url: https://tongyi.aliyun.com/qianwen/
-      description: 
-
-    - title: 秘塔AI搜索
-      logo: images/logos/Mita.svg
-      url: https://metaso.cn/
-      description: 
-
-    - title: Hugging Face
-      logo: images/logos/HuggingFace.svg
-      url: https://huggingface.co/
-      description: 
-
-    - title: Mistral
-      logo: images/logos/Mistral.svg
-      url: https://chat.mistral.ai/
+    - title: Grok
+      logo: images/logos/X-Grok.svg
+      url: https://grok.com/
       description: 
 
 - taxonomy: 工具箱
@@ -976,11 +936,6 @@
           logo: images/logos/SimpleIcons.svg
           url: https://simpleicons.org/
           description: "知名图标库"
-
-        - title: Fey’s logo database
-          logo: images/logos/Default.svg
-          url: https://www.fey.com/marketing/logos
-          description: "大公司logo收集"
 
         - title: 阿里巴巴矢量图标库
           logo: images/logos/Iconfont.svg
