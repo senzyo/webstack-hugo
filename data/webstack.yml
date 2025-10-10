@@ -8,11 +8,6 @@
       url: https://www.momoyu.cc/
       description: 
 
-    - title: V2EX
-      logo: images/logos/V2EX.svg
-      url: https://v2ex.com/
-      description: "创意工作者们的社区"
-
     - title: 小众软件
       logo: images/logos/Appinn.svg
       url: https://meta.appinn.net/
@@ -46,25 +41,10 @@
       url: https://poe.com/
       description: "须代理"
 
-    - title: Perplexity
-      logo: images/logos/Perplexity.svg
-      url: https://www.perplexity.ai/
-      description: "须代理"
-
-    - title: DeepSeek
-      logo: images/logos/DeepSeek.svg
-      url: https://chat.deepseek.com/
-      description: 
-
-    - title: 豆包
-      logo: images/logos/ByteDance-Doubao.png
-      url: https://www.doubao.com/
-      description: 
-
     - title: Grok
       logo: images/logos/X-Grok.svg
       url: https://grok.com/
-      description: 
+      description: "须代理"
 
 - taxonomy: 工具箱
   icon: fa-cogs
@@ -2738,26 +2718,3 @@
           logo: images/logos/Default.svg
           url: https://www.musicca.com/zh
           description: "免费学习音乐乐理"
-
-- taxonomy: SenZyo
-  icon: fa-info
-  links: 
-    - title: 博客
-      logo: images/logo.svg
-      url: https://senzyo.net/
-      description: "本人的博客"
-
-    - title: 思维导图
-      logo: images/logo.svg
-      url: https://mindmap.senzyo.net/
-      description: "纯前端, 数据存本地"
-
-    - title: Rename
-      logo: images/logo.svg
-      url: https://rename.senzyo.net/
-      description: "在线批量重命名文件"
-
-    - title: 视频解析
-      logo: images/logo.svg
-      url: https://video.senzyo.net/
-      description: 
