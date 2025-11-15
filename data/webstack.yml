@@ -181,16 +181,6 @@
           url: https://ttttt.link/
           description: 
 
-        - title: 奶牛快传
-          logo: images/logos/Cowtransfer.svg
-          url: https://cowtransfer.com/
-          description: 
-
-        - title: 文叔叔
-          logo: images/logos/Wenshushu.svg
-          url: https://www.wenshushu.cn/
-          description: 
-
         - title: File.io
           logo: images/logos/File.io.svg
           url: https://www.file.io/
@@ -328,6 +318,11 @@
           logo: images/logos/PiGai.svg
           url: http://www.pigai.org/
           description: "批改英语作文并指正错误"
+
+        - title: Belin Doc
+          logo: images/logos/Default.svg
+          url: https://belindoc.com/zh
+          description: "AI文档翻译"
 
         - title: Doc Translator
           logo: images/logos/Onlinedoc-Translator.svg
@@ -709,6 +704,11 @@
     - term: 短信接码
       icon: fa-commenting
       links:
+        - title: giffgaff
+          logo: images/logos/Default.svg
+          url: https://bx7h0mz5l4n.feishu.cn/wiki/EUrzwYL6liPT35kfiSOcubAmnDh
+          description: "giffgaff中国玩家指南"
+
         - title: SMS-Activate
           logo: images/logos/Default.svg
           url: https://sms-activate.org/cn/
@@ -1868,6 +1868,11 @@
           url: https://mheee.com/
           description: "下载mobi和epub格式漫画"
 
+        - title: moxmoe漫画
+          logo: images/logos/Default.svg
+          url: https://www.moxmoemh.com/
+          description: "下载mobi和epub格式漫画"
+
     - term: 以图搜图
       icon: fa-search
       links:
@@ -1952,7 +1957,12 @@
         - title: 老游戏在线玩
           logo: images/logos/Default.svg
           url: https://zaixianwan.app/
-          description: 
+          description: "老旧游戏在线模拟器"
+
+        - title: Emu666
+          logo: images/logos/Default.svg
+          url: https://www.emu666.com/
+          description: "老旧游戏在线模拟器"
 
         - title: PolyTrack
           logo: images/logos/Default.svg
@@ -2227,11 +2237,6 @@
           logo: images/logos/Default.svg
           url: https://xiageba.com/
           description: "无损音乐, 下载"
-
-        - title: 音乐磁场
-          logo: images/logos/Default.svg
-          url: https://www.hifini.com/
-          description: "无损音乐论坛"
 
         - title: CD包音乐网
           logo: images/logos/Default.svg
@@ -2623,6 +2628,11 @@
           url: https://microblock.cc/learn/number
           description: "包括英语和电台中英文"
 
+        - title: Animagraffs
+          logo: images/logos/Default.svg
+          url: https://animagraffs.com/
+          description: "用动画解释机器工作原理"
+
     - term: 检索
       icon: fa-search
       links:
@@ -2676,6 +2686,11 @@
           url: http://jhsjk.people.cn/
           description: 
 
+        - title: Seismic Explorer
+          logo: images/logos/Default.svg
+          url: https://seismic-explorer.concord.org/
+          description: "1980年以来全球地震地图"
+
     - term: 杂项
       icon: fa-pagelines
       links:
@@ -2718,3 +2733,13 @@
           logo: images/logos/Default.svg
           url: https://www.musicca.com/zh
           description: "免费学习音乐乐理"
+
+        - title: BankNav
+          logo: images/logos/Default.svg
+          url: https://www.banknav.com/
+          description: "港美股券商导航"
+
+        - title: Revoke
+          logo: images/logos/Default.svg
+          url: https://revoke.cash/zh
+          description: "撤销加密货币钱包授权"
