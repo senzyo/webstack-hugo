@@ -1229,6 +1229,11 @@
           url: https://pixelmap.amcharts.com/
           description: "地图着色器"
 
+        - title: Seismic Explorer
+          logo: images/logos/Default.svg
+          url: https://seismic-explorer.concord.org/
+          description: "1980年以来全球地震地图"
+
     - term: 模型
       icon: fa-cubes
       links:
@@ -1704,7 +1709,7 @@
 
         - title: AGE动漫
           logo: images/logos/Default.svg
-          url: https://www.agedm.org/
+          url: https://www.agedm.io/
           description: "发布页: rentry.la/agefans"
 
         - title: 次元城动漫
@@ -1714,17 +1719,17 @@
 
         - title: ギリギリ愛
           logo: images/logos/Default.svg
-          url: https://anime.girigirilove.com/
-          description: "发布页: girigirilove.top"
+          url: https://bgm.girigirilove.com/
+          description: "须代理，发布页: girigirilove.top"
 
         - title: 稀饭动漫
           logo: images/logos/Default.svg
-          url: https://dick.xfani.com/
-          description: "导航页: 稀饭动漫.com"
+          url: https://dm.xifanacg.com/
+          description: "导航页: xifan.moe"
 
         - title: 大千视界
           logo: images/logos/Default.svg
-          url: https://www.dqsj.top/
+          url: https://www.dalvdm.cc/
           description: "发布页: www.dlidli.app"
 
         - title: 樱花动漫
@@ -1736,11 +1741,6 @@
           logo: images/logos/Default.svg
           url: https://www.ntdm.tv/
           description: "发布页: www.ntdm.fans"
-
-        - title: AcFuns
-          logo: images/logos/Default.svg
-          url: https://www.anfuns.vip/
-          description: "t.me/+E4NnPjEZBu01MDJl"
 
     - term: 动漫下载
       icon: fa-download
@@ -1825,7 +1825,7 @@
 
         - title: 漫画160
           logo: images/logos/Default.svg
-          url: https://www.mh160.cc/
+          url: https://www.mh160mh.com/
           description: 
 
         - title: 大树漫画
@@ -1837,11 +1837,6 @@
           logo: images/logos/Default.svg
           url: https://tel.dm5.com/
           description: "同tel.1kkk.com"
-
-        - title: 古风漫画网
-          logo: images/logos/Default.svg
-          url: https://www.gufengmh9.com/
-          description: 
 
         - title: 二次元动漫
           logo: images/logos/Default.svg
@@ -2063,25 +2058,15 @@
           url: https://www.hdmoli.pro/
           description: "发布页: molicp.com"
 
-        - title: 低端影视
-          logo: images/logos/Default.svg
-          url: https://ddys.mov/
-          description: "发布页: ddys.site"
-
         - title: 电影先生
           logo: images/logos/Default.svg
           url: https://dianyi.ng/
           description: "备用网址: 电影先生.com"
 
-        - title: 金牌影院
-          logo: images/logos/Default.svg
-          url: https://fjvtw.com/
-          description: 
-
         - title: 筷子影视
           logo: images/logos/Default.svg
           url: https://www.kzvod.cc/
-          description: 
+          description: "发布页: www.kzvod.vip"
 
     - term: 视频下载
       icon: fa-download
@@ -2111,11 +2096,6 @@
           url: https://snapreels.net/zh-cn
           description: "仅支持Ins,TikTok,Facebook,X"
 
-        - title: Tik.fail
-          logo: images/logos/Tik.fail.svg
-          url: https://tik.fail/
-          description: "TikTok的视频存档"
-
         - title: 蚂蚁4K
           logo: images/logos/Default.svg
           url: https://www.mayi4k.com/
@@ -2135,11 +2115,6 @@
           logo: images/logos/Default.svg
           url: https://seedhub.info/
           description: 
-
-        - title: TorrentGalaxy
-          logo: images/logos/Default.svg
-          url: https://tgx.sb/
-          description: "发布页: torrentgalaxy.org"
 
         - title: YTS.MX
           logo: images/logos/YTS.svg
@@ -2685,11 +2660,6 @@
           logo: images/logos/Default.svg
           url: http://jhsjk.people.cn/
           description: 
-
-        - title: Seismic Explorer
-          logo: images/logos/Default.svg
-          url: https://seismic-explorer.concord.org/
-          description: "1980年以来全球地震地图"
 
     - term: 杂项
       icon: fa-pagelines
