@@ -1999,8 +1999,8 @@
 
         - title: 加密音乐解锁
           logo: images/logos/Unlock-Music-ix.svg
-          url: https://um-react.netlify.app/
-          description: "解锁各平台加密音乐格式"
+          url: https://demo.um-react.app/
+          description: "解锁各音乐平台的加密格式"
 
         - title: 团子AI
           logo: images/logos/Dango.svg
