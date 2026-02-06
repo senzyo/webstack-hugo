@@ -2,16 +2,16 @@
 
 - taxonomy: 常用
   icon: fa-star
-  links: 
+  links:
     - title: 摸摸鱼热榜
       logo: images/logos/Momoyu.svg
       url: https://www.momoyu.cc/
-      description: 
+      description:
 
     - title: 小众软件
       logo: images/logos/Appinn.svg
       url: https://meta.appinn.net/
-      description: 
+      description:
 
     - title: 不死鸟
       logo: images/logos/Phoenix.svg
@@ -25,7 +25,7 @@
 
 - taxonomy: 人工智能
   icon: fa-comments
-  links: 
+  links:
     - title: ChatGPT
       logo: images/logos/OpenAI-ChatGPT.svg
       url: https://chatgpt.com/
@@ -48,11 +48,16 @@
 
 - taxonomy: 工具箱
   icon: fa-cogs
-  links: 
+  links:
     - title: 优秀工具箱集合
       logo: images/logos/GitHub.svg
       url: https://github.com/bestxtools/awesome-toolbox-chinese
       description: "awesome-toolbox-chinese"
+
+    - title: FastDo
+      logo: images/logos/Default.svg
+      url: https://fastdo.tools/
+      description: "浏览器本地处理"
 
     - title: 帮小忙
       logo: images/logos/Tencent-Bangxiaomang.svg
@@ -72,37 +77,37 @@
     - title: 开发者武器库
       logo: images/logos/Default.svg
       url: https://devtool.tech/
-      description: 
+      description:
 
     - title: 草料二维码
       logo: images/logos/Caoliao-QRcode.svg
       url: https://cli.im/
-      description: 
+      description:
 
     - title: Toolfk
       logo: images/logos/Toolfk.svg
       url: https://www.toolfk.com/
-      description: 
+      description:
 
     - title: MikuTools
       logo: images/logos/MikuTools.svg
       url: https://tools.miku.ac/
-      description: 
+      description:
 
     - title: 网易见外工作台
       logo: images/logos/Wangyi-JianWai.svg
       url: https://jianwai.youdao.com/
-      description: 
+      description:
 
     - title: 99参考计算网
       logo: images/logos/99CanKao.svg
       url: https://www.99cankao.com/
-      description: 
+      description:
 
     - title: Tool.lu
       logo: images/logos/Default.svg
       url: https://tool.lu/
-      description: 
+      description:
 
 - taxonomy: 云传输
   icon: fa-exchange
@@ -110,47 +115,47 @@
     - title: PairDrop
       logo: images/logos/Default.svg
       url: https://pairdrop.net/
-      description: 
+      description:
 
     - title: Weblink
       logo: images/logos/Default.svg
       url: https://webl.ink/
-      description: 
+      description:
 
     - title: tl-rtc-file
       logo: images/logos/Default.svg
       url: https://im.iamtsm.cn/
-      description: 
+      description:
 
     - title: transfer.zip
       logo: images/logos/Default.svg
       url: https://transfer.zip/
-      description: 
+      description:
 
     - title: 钛盘
       logo: images/logos/Tmp.link.svg
       url: https://ttttt.link/
-      description: 
+      description:
 
     - title: File.io
       logo: images/logos/File.io.svg
       url: https://www.file.io/
-      description: 
+      description:
 
     - title: Wormhole
       logo: images/logos/Wormhole.svg
       url: https://wormhole.app/
-      description: 
+      description:
 
     - title: FileTransfer
       logo: images/logos/FileTransfer.svg
       url: https://filetransfer.io/
-      description: 
+      description:
 
     - title: New Space
       logo: images/logos/Default.svg
       url: https://new.space/
-      description: 
+      description:
 
     - title: AC Data
       logo: images/logos/Default.svg
@@ -164,39 +169,39 @@
 
 - taxonomy: 邮箱
   icon: fa-envelope
-  list: 
+  list:
     - term: 常用邮箱
       icon: fa-envelope
       links:
         - title: QQ邮箱
           logo: images/logos/QQMail.svg
           url: https://mail.qq.com/
-          description: 
+          description:
 
         - title: 网易邮箱
           logo: images/logos/Wangyi.svg
           url: https://email.163.com/
-          description: 
+          description:
 
         - title: Gmail
           logo: images/logos/Gmail.svg
           url: https://mail.google.com/
-          description: 
+          description:
 
         - title: Outlook
           logo: images/logos/Outlook.svg
           url: https://outlook.live.com/
-          description: 
+          description:
 
         - title: Yandex.mail
           logo: images/logos/Yandex-Mail.svg
           url: https://360.yandex.com/mail/
-          description: 
+          description:
 
         - title: Protonmail
           logo: images/logos/ProtonMail.svg
           url: https://proton.me/mail
-          description: 
+          description:
 
     - term: 临时邮箱
       icon: fa-envelope-open
@@ -204,26 +209,26 @@
         - title: 临时邮箱
           logo: images/logos/Linshiyouxiang.svg
           url: https://linshiyouxiang.net/
-          description: 
+          description:
 
         - title: Temp-Mail
           logo: images/logos/TempMail.svg
           url: https://temp-mail.org/
-          description: 
+          description:
 
         - title: Moakt
           logo: images/logos/Moakt.svg
           url: https://www.moakt.com/
-          description: 
+          description:
 
         - title: Adguard Temp Mail
           logo: images/logos/Adguard.svg
           url: https://adguard.com/en/adguard-temp-mail/overview.html
-          description: 
+          description:
 
 - taxonomy: 文档
   icon: fa-file
-  list: 
+  list:
     - term: 文档解析
       icon: fa-file-text-o
       links:
@@ -235,7 +240,7 @@
         - title: 小鲸鱼文献
           logo: images/logos/Default.png
           url: http://www.9312.net/
-          description: 
+          description:
 
     - term: 编辑辅助
       icon: fa-edit
@@ -268,7 +273,7 @@
         - title: 白描网页版
           logo: images/logos/Baimiao.svg
           url: https://web.baimiaoapp.com/
-          description: 
+          description:
 
         - title: Online OCR
           logo: images/logos/Default.svg
@@ -296,37 +301,37 @@
         - title: PDF派
           logo: images/logos/PDFpai.svg
           url: https://www.pdfpai.com/
-          description: 
+          description:
 
         - title: PDF24 Tools
           logo: images/logos/PDF24.svg
           url: https://tools.pdf24.org/
-          description: 
+          description:
 
         - title: 福昕云编辑
           logo: images/logos/Foxit-CloudEdit.svg
           url: https://edit.foxitcloud.cn/
-          description: 
+          description:
 
         - title: iLovePDF
           logo: images/logos/iLovePDF.svg
           url: https://www.ilovepdf.com/zh-cn
-          description: 
+          description:
 
         - title: To epub
           logo: images/logos/ToEpub.svg
           url: https://toepub.com/zh/
-          description: 
+          description:
 
         - title: CleverPDF
           logo: images/logos/CleverPDF.svg
           url: https://www.cleverpdf.com/cn
-          description: 
+          description:
 
         - title: PDF Candy
           logo: images/logos/PDFcandy.svg
           url: https://pdfcandy.com/cn/
-          description: 
+          description:
 
     - term: PPT
       icon: fa-file-powerpoint-o
@@ -339,31 +344,31 @@
         - title: OfficePLUS
           logo: images/logos/Microsoft.svg
           url: https://www.officeplus.cn/
-          description: 
+          description:
 
         - title: HiPPTer
           logo: images/logos/HiPPTer.svg
           url: http://www.hippter.com/
-          description: 
+          description:
 
         - title: PPT超级市场
           logo: images/logos/PPTsotary.svg
           url: https://www.pptsupermarket.com/
-          description: 
+          description:
 
         - title: 吾道
           logo: images/logos/Woodo.svg
           url: https://www.woodo.cn/home/
-          description: 
+          description:
 
         - title: Beautiful.ai
           logo: images/logos/Beautiful.ai.svg
           url: https://www.beautiful.ai/
-          description: 
+          description:
 
 - taxonomy: IT
   icon: fa-desktop
-  list: 
+  list:
     - term: 查询
       icon: fa-search
       links:
@@ -380,7 +385,7 @@
         - title: Debian软件包
           logo: images/logos/Debian.svg
           url: https://www.debian.org/distrib/packages.zh-cn.html
-          description: 
+          description:
 
         - title: DLL-Files
           logo: images/logos/Default.svg
@@ -390,7 +395,7 @@
         - title: 互联网数据资讯中心
           logo: images/logos/199it.svg
           url: http://www.199it.com/
-          description: 
+          description:
 
         - title: Archive.today
           logo: images/logos/Default.svg
@@ -466,7 +471,7 @@
         - title: 网络测速面板
           logo: images/logos/Default.svg
           url: https://ljxi.github.io/NetworkPanel/
-          description: 
+          description:
 
         - title: SpeedTest
           logo: images/logos/SpeedTest.svg
@@ -481,17 +486,17 @@
         - title: 南京大学网络测速
           logo: images/logos/Default.svg
           url: https://test.nju.edu.cn/
-          description: 
+          description:
 
         - title: 南京航空航天大学网络测速
           logo: images/logos/Default.svg
           url: http://speed.nuaa.edu.cn/
-          description: 
+          description:
 
         - title: 中国科学技术大学网络测速
           logo: images/logos/Default.svg
           url: https://test.ustc.edu.cn/
-          description: 
+          description:
 
     - term: 机场和VPS
       icon: fa-plane
@@ -514,12 +519,12 @@
         - title: DNS Leak Test
           logo: images/logos/Default.svg
           url: https://browserleaks.com/dns
-          description: 
+          description:
 
         - title: WebRTC Leak Test
           logo: images/logos/Default.svg
           url: https://browserleaks.com/webrtc
-          description: 
+          description:
 
     - term: 扫描病毒
       icon: fa-exclamation-triangle
@@ -575,7 +580,7 @@
         - title: KMS地址列表
           logo: images/logos/Default.svg
           url: https://www.coolhub.top/tech-articles/kms_list.html
-          description: 
+          description:
 
         - title: SORDUM
           logo: images/logos/Sordum.svg
@@ -603,12 +608,12 @@
         - title: 站长工具
           logo: images/logos/ChinaZ.svg
           url: https://tool.chinaz.com/tools/nav
-          description: 
+          description:
 
         - title: IT DOG
           logo: images/logos/Default.svg
           url: https://www.itdog.cn/
-          description: 
+          description:
 
         - title: Ping0
           logo: images/logos/Default.svg
@@ -623,7 +628,7 @@
         - title: IPv6工具箱
           logo: images/logos/Default.svg
           url: https://ipw.cn/
-          description: 
+          description:
 
         - title: Test-IPv6
           logo: images/logos/Default.svg
@@ -719,22 +724,22 @@
         - title: 百度搜索资源平台
           logo: images/logos/Baidu.svg
           url: https://ziyuan.baidu.com/
-          description: 
+          description:
 
         - title: Bing Webmaster Tools
           logo: images/logos/Bing.svg
           url: https://www.bing.com/webmasters/
-          description: 
+          description:
 
         - title: Google search console
           logo: images/logos/Google-SearchConsole.svg
           url: https://search.google.com/search-console/
-          description: 
+          description:
 
         - title: Yandex webmaster
           logo: images/logos/Yandex-Webmaster.svg
           url: https://webmaster.yandex.ru/
-          description: 
+          description:
 
     - term: 网站扫描
       icon: fa-exclamation-triangle
@@ -742,21 +747,21 @@
         - title: Censys
           logo: images/logos/Censys.svg
           url: https://search.censys.io/
-          description: 
+          description:
 
         - title: 钟馗之眼
           logo: images/logos/Default.svg
           url: https://www.zoomeye.org/
-          description: 
+          description:
 
         - title: Shodan
           logo: images/logos/Default.svg
           url: https://www.shodan.io/
-          description: 
+          description:
 
 - taxonomy: 设计
   icon: fa-paint-brush
-  list: 
+  list:
     - term: 平面图标
       icon: fa-font-awesome
       links:
@@ -841,7 +846,7 @@
         - title: 免扣图片网
           logo: images/logos/Default.svg
           url: https://miankoutupian.com/
-          description: 
+          description:
 
         - title: PngImg
           logo: images/logos/PngImg.svg
@@ -878,7 +883,7 @@
           url: https://images.nasa.gov/
           description: "NASA官方"
 
-        - title: Toptal纹理 
+        - title: Toptal纹理
           logo: images/logos/Toptal-Texture.svg
           url: https://www.toptal.com/designers/subtlepatterns/
           description: "纹理库"
@@ -918,7 +923,7 @@
           url: https://magdeleine.co/
           description: "免费图库"
 
-        - title: StockSnap    
+        - title: StockSnap
           logo: images/logos/StockSnap.svg
           url: https://stocksnap.io/
           description: "免费图库"
@@ -984,12 +989,12 @@
         - title: Color Hunt
           logo: images/logos/Default.svg
           url: https://colorhunt.co/
-          description: 
+          description:
 
         - title: ColorSpace
           logo: images/logos/Default.svg
           url: https://mycolor.space/
-          description: 
+          description:
 
         - title: Hyper Color
           logo: images/logos/Default.svg
@@ -1025,17 +1030,17 @@
           description: "全球全景VR"
 
     - term: 地图
-      icon: fa-map      
+      icon: fa-map
       links:
         - title: 易制地图
           logo: images/logos/Makeamap.svg
           url: https://www.makeamap.cn/
-          description: 
+          description:
 
         - title: 幻想地图生成器
           logo: images/logos/Default.svg
           url: https://hk.8desk.top/
-          description: 
+          description:
 
         - title: City Roads
           logo: images/logos/Default.svg
@@ -1045,12 +1050,12 @@
         - title: 全国行政区划信息查询平台
           logo: images/logos/Default.svg
           url: http://xzqh.mca.gov.cn/map
-          description: 
+          description:
 
         - title: 标准地图服务系统
           logo: images/logos/China-Cehui.svg
           url: https://www.csgpc.org/list/254.html
-          description: 
+          description:
 
         - title: 遥感家园
           logo: images/logos/Default.svg
@@ -1060,7 +1065,7 @@
         - title: 阿里云DataV地图
           logo: images/logos/Aliyun-DataV.svg
           url: https://datav.aliyun.com/portal/school/atlas/area_selector
-          description: 
+          description:
 
         - title: Pixel Map Generator
           logo: images/logos/PixelMap.svg
@@ -1088,37 +1093,37 @@
         - title: Freebiesbug
           logo: images/logos/Freebiesbug.svg
           url: https://freebiesbug.com/
-          description: 
+          description:
 
         - title: Free Mockups
           logo: images/logos/FreeMockups.svg
           url: https://www.ls.graphics/free-mockups
-          description: 
+          description:
 
         - title: Mockup Photos
           logo: images/logos/Default.svg
           url: https://mockup.photos/
-          description: 
+          description:
 
         - title: Mockup World
           logo: images/logos/MockupWorld.svg
           url: https://www.mockupworld.co/
-          description: 
+          description:
 
         - title: Graphberry
           logo: images/logos/Graphberry.svg
           url: https://www.graphberry.com/
-          description: 
+          description:
 
         - title: GraphicsFuel
           logo: images/logos/GraphicsFuel.svg
           url: https://www.graphicsfuel.com/category/mockup-templates/
-          description: 
+          description:
 
         - title: The Mockup Club
           logo: images/logos/TheMockupClub.svg
           url: https://themockup.club/
-          description: 
+          description:
 
         - title: Pixel Squid
           logo: images/logos/PixelSquid.svg
@@ -1251,7 +1256,7 @@
           url: https://vectorizer.com/zh/
           description: "PNG转SVG"
 
-        - title: Expression Editor 
+        - title: Expression Editor
           logo: images/logos/HuggingFace.svg
           url: https://huggingface.co/spaces/fffiloni/expression-editor
           description: "基于AI的人脸编辑工具"
@@ -1353,12 +1358,12 @@
         - title: Matrix文字雨
           logo: images/logos/Default.svg
           url: https://wangyasai.github.io/TheMatrix/
-          description: 
+          description:
 
         - title: 波浪形文字
           logo: images/logos/Default.svg
           url: https://wangyasai.github.io/waveFont/
-          description: 
+          description:
 
         - title: Texter
           logo: images/logos/Tholman.svg
@@ -1386,17 +1391,17 @@
         - title: 花火数图
           logo: images/logos/Hanabi-DataV.svg
           url: https://hanabi.cn/
-          description: 
+          description:
 
         - title: 图表秀模板
           logo: images/logos/Tubiaoxiu.svg
           url: https://mall.tubiaoxiu.com/templates
-          description: 
+          description:
 
         - title: 图表魔方
           logo: images/logos/ChartCube.svg
           url: https://chartcube.alipay.com/
-          description: 
+          description:
 
     - term: 点击生成
       icon: fa-mouse-pointer
@@ -1442,7 +1447,7 @@
         - title: Perlin Noise
           logo: images/logos/Default.svg
           url: https://wangyasai.github.io/Perlin-Noise/
-          description: 
+          description:
 
         - title: Noise Painter
           logo: images/logos/Default.svg
@@ -1452,17 +1457,17 @@
         - title: Perlin Noise Painter
           logo: images/logos/Default.svg
           url: https://wangyasai.github.io/PerlinNoisePainter/
-          description: 
+          description:
 
         - title: Stars-Emmision
           logo: images/logos/Default.svg
           url: https://wangyasai.github.io/Stars-Emmision/
-          description: 
+          description:
 
         - title: Speed-Line
           logo: images/logos/Default.svg
           url: https://wangyasai.github.io/Speed-Line/
-          description: 
+          description:
 
         - title: Inspiral
           logo: images/logos/Inspiral.svg
@@ -1477,7 +1482,7 @@
         - title: 色条&图片球
           logo: images/logos/Default.svg
           url: https://wangyasai.github.io/Play-a-ball/
-          description: 
+          description:
 
         - title: Moe Counter
           logo: images/logos/Default.svg
@@ -1486,14 +1491,14 @@
 
 - taxonomy: ACGN
   icon: fa-heart
-  list: 
+  list:
     - term: 在线动漫
       icon: fa-youtube-play
       links:
         - title: 樱之空动漫
           logo: images/logos/Default.svg
           url: https://www.skr2.cc/
-          description: 
+          description:
 
         - title: AGE动漫
           logo: images/logos/Default.svg
@@ -1536,12 +1541,12 @@
         - title: 菲特动漫
           logo: images/logos/Default.svg
           url: https://fitacg.com/
-          description: 
+          description:
 
         - title: 爱恋动漫
           logo: images/logos/Default.svg
           url: https://www.kisssub.org/
-          description: 
+          description:
 
         - title: 蜜柑计划
           logo: images/logos/Default.svg
@@ -1599,7 +1604,7 @@
         - title: Komiic漫画
           logo: images/logos/Default.svg
           url: https://komiic.com/
-          description: 
+          description:
 
         - title: G社漫画
           logo: images/logos/Default.svg
@@ -1609,17 +1614,17 @@
         - title: 包子漫画
           logo: images/logos/Default.svg
           url: https://www.baozimh.com/
-          description: 
+          description:
 
         - title: 漫画160
           logo: images/logos/Default.svg
           url: https://www.mh160mh.com/
-          description: 
+          description:
 
         - title: 大树漫画
           logo: images/logos/Default.svg
           url: https://www.dashumanhua.com/
-          description: 
+          description:
 
         - title: 动漫屋DM5
           logo: images/logos/Default.svg
@@ -1667,12 +1672,12 @@
         - title: TraceMOE
           logo: images/logos/Default.svg
           url: https://trace.moe/
-          description: 
+          description:
 
         - title: 二次元画像詳細検索
           logo: images/logos/Default.svg
           url: https://ascii2d.net/
-          description: 
+          description:
 
         - title: TinEye
           logo: images/logos/Default.svg
@@ -1682,7 +1687,7 @@
         - title: 多引擎搜索
           logo: images/logos/Default.svg
           url: http://www.iqdb.org/
-          description: 
+          description:
 
     - term: 游戏
       icon: fa-gamepad
@@ -1763,22 +1768,22 @@
         - title: ACG导航网
           logo: images/logos/Default.svg
           url: https://www.acgdh.cc/
-          description: 
+          description:
 
         - title: 新番列表-米麓星
           logo: images/logos/Default.svg
           url: https://www.miluxing.com
-          description: 
+          description:
 
         - title: Bangumi番组计划
           logo: images/logos/Default.svg
           url: https://bgm.tv/calendar
-          description: 
+          description:
 
         - title: ACG Secrets
           logo: images/logos/Default.svg
           url: https://acgsecrets.hk/
-          description: 
+          description:
 
         - title: PixivIC
           logo: images/logos/Pixiv.svg
@@ -1802,7 +1807,7 @@
 
 - taxonomy: 视频
   icon: fa-play-circle
-  list: 
+  list:
     - term: 在线影视
       icon: fa-youtube-play
       links:
@@ -1824,7 +1829,7 @@
         - title: 123Series
           logo: images/logos/Default.svg
           url: https://123-series.com/
-          description: 
+          description:
 
         - title: 茶杯狐
           logo: images/logos/Default.svg
@@ -1872,17 +1877,17 @@
         - title: 迷客电影
           logo: images/logos/Default.svg
           url: https://www.mini4k.com/
-          description: 
+          description:
 
         - title: EZTV
           logo: images/logos/Default.svg
           url: https://eztvx.to/
-          description: 
+          description:
 
         - title: SeedHub
           logo: images/logos/Default.svg
           url: https://seedhub.info/
-          description: 
+          description:
 
         - title: YTS.MX
           logo: images/logos/YTS.svg
@@ -1915,7 +1920,7 @@
         - title: 字幕工具箱
           logo: images/logos/Default.svg
           url: https://zm.i8k.tv/
-          description: 
+          description:
 
     - term: 摄像头
       icon: fa-camera
@@ -1932,7 +1937,7 @@
 
 - taxonomy: 音频
   icon: fa-music
-  list: 
+  list:
     - term: 音频搜索
       icon: fa-music
       links:
@@ -2006,10 +2011,10 @@
 
 - taxonomy: 更多
   icon: fa-leaf
-  list: 
+  list:
     - term: 书籍
       icon: fa-book
-      links: 
+      links:
         - title: Telegram精选推荐
           logo: images/logos/Telegram.svg
           url: https://github.com/jackvale/rectg
@@ -2033,12 +2038,12 @@
         - title: 世界数字图书馆
           logo: images/logos/WDL.svg
           url: https://www.loc.gov/
-          description: 
+          description:
 
         - title: 全国图书馆参考咨询联盟
           logo: images/logos/Default.svg
           url: http://www.ucdrs.superlib.net/
-          description: 
+          description:
 
         - title: 文津搜索
           logo: images/logos/Default.svg
@@ -2048,42 +2053,42 @@
         - title: 中国哲学书电子化计划
           logo: images/logos/Default.svg
           url: https://ctext.org/zhs
-          description: 
+          description:
 
         - title: 无名图书
           logo: images/logos/Default.svg
           url: https://www.book345.com/
-          description: 
+          description:
 
         - title: 书格
           logo: images/logos/Shuge.svg
           url: https://www.shuge.org/
-          description: 
+          description:
 
         - title: 太极书馆
           logo: images/logos/Default.svg
           url: https://www.8bei8.com/
-          description: 
+          description:
 
         - title: 识典古籍
           logo: images/logos/Default.svg
           url: https://www.shidianguji.com/
-          description: 
+          description:
 
         - title: 古书网
           logo: images/logos/Default.svg
           url: https://gushu.net.cn/
-          description: 
+          description:
 
         - title: 飞库文学网
           logo: images/logos/Default.svg
           url: https://www.feiku6.com/
-          description: 
+          description:
 
         - title: 可阅文学网
           logo: images/logos/Default.svg
           url: https://kepub.net/
-          description: 
+          description:
 
         - title: JOJO看报
           logo: images/logos/Default.svg
@@ -2103,7 +2108,7 @@
         - title: CNS学术导航
           logo: images/logos/Default.svg
           url: https://cnspub.com/
-          description: 
+          description:
 
         - title: 烟海
           logo: images/logos/Default.svg
@@ -2121,7 +2126,7 @@
         - title: 中华珍宝馆
           logo: images/logos/ZhenBao-CN.svg
           url: http://g2.ltfc.net/home
-          description: 
+          description:
 
         - title: 中国大百科全书
           logo: images/logos/Default.svg
@@ -2146,17 +2151,17 @@
         - title: 全历史
           logo: images/logos/AllHistory.svg
           url: https://www.allhistory.com/
-          description: 
+          description:
 
         - title: 搜韵
           logo: images/logos/SouYun.svg
           url: https://sou-yun.cn/
-          description: 
+          description:
 
         - title: 漢典
           logo: images/logos/ZDic.svg
           url: https://www.zdic.net/
-          description: 
+          description:
 
         - title: 文言文字典
           logo: images/logos/Default.svg
@@ -2166,7 +2171,7 @@
         - title: 海棠诗社
           logo: images/logos/Default.svg
           url: https://haitang.app/
-          description: 
+          description:
 
         - title: AsPoem
           logo: images/logos/Default.svg
@@ -2176,7 +2181,7 @@
         - title: 中国家谱知识服务平台
           logo: images/logos/Default.svg
           url: https://jiapu.library.sh.cn/
-          description: 
+          description:
 
         - title: 历史车轮
           logo: images/logos/Default.svg
@@ -2201,12 +2206,12 @@
         - title: 皮影数字博物馆
           logo: images/logos/Default.svg
           url: http://shadow.caa.edu.cn/
-          description: 
+          description:
 
         - title: 时光图书馆
           logo: images/logos/Default.svg
           url: https://atimebook.com/
-          description: 
+          description:
 
         - title: 五十弦
           logo: images/logos/Default.svg
@@ -2327,7 +2332,7 @@
         - title: 习近平系列重要讲话数据库
           logo: images/logos/Default.svg
           url: http://jhsjk.people.cn/
-          description: 
+          description:
 
     - term: 杂项
       icon: fa-pagelines
@@ -2335,7 +2340,7 @@
         - title: Greasy Fork
           logo: images/logos/GreasyFork.svg
           url: https://greasyfork.org/
-          description: 
+          description:
 
         - title: 恩山无线论坛
           logo: images/logos/Default.svg
@@ -2355,17 +2360,17 @@
         - title: 图虫EXIF查看器
           logo: images/logos/Default.svg
           url: https://exif.tuchong.com/
-          description: 
+          description:
 
         - title: 数学乐
           logo: images/logos/Default.svg
           url: https://www.shuxuele.com/
-          description: 
+          description:
 
         - title: 元素周期表PRO
           logo: images/logos/Default.svg
           url: https://pt.ziziyi.com/
-          description: 
+          description:
 
         - title: Musicca
           logo: images/logos/Default.svg
