@@ -2022,17 +2022,17 @@
 
         - title: SLUM
           logo: images/logos/Default.svg
-          url: https://open-slum.org
+          url: https://open-slum.pages.dev/
           description: "监控影子图书馆的可用性"
 
         - title: Z-Library
           logo: images/logos/Z-Library.svg
-          url: https://zh.z-library.ec/
+          url: https://zh.z-library.sk/
           description: "en.wikipedia.org/wiki/Z-Library"
 
         - title: Anna's Archive
           logo: images/logos/Default.svg
-          url: https://zh.annas-archive.org/
+          url: https://zh.annas-archive.gl/
           description: "en.wikipedia.org/wiki/Anna%27s_Archive"
 
         - title: 世界数字图书馆
