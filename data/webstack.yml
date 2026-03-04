@@ -511,6 +511,11 @@
           url: https://www.duyaoss.com/
           description: "机场测速"
 
+        - title: DIGVPS
+          logo: images/logos/Default.svg
+          url: https://digvps.com/
+          description: "VPS评测"
+
         - title: VPS Is
           logo: images/logos/Default.svg
           url: https://vpsls.com/
