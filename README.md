@@ -20,7 +20,7 @@ This is a modified version of [webstack-hugo-v2.0rc2](https://github.com/iplayco
 ## Usage
 
 ```
-git clone https://github.com/senzyo-desu/webstack-hugo.git
+git clone https://github.com/senzyo/webstack-hugo.git
 ```
 
 Download [Hugo](https://github.com/gohugoio/hugo/releases/latest), and it is recommended to use the `hugo_extended` version.

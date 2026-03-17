@@ -20,7 +20,7 @@
 ## 使用
 
 ```
-git clone https://github.com/senzyo-desu/webstack-hugo.git
+git clone https://github.com/senzyo/webstack-hugo.git
 ```
 
 下载 [Hugo](https://github.com/gohugoio/hugo/releases/latest), 推荐使用 `hugo_extended` 版本。

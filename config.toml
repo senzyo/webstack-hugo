@@ -14,7 +14,7 @@ disableKinds = ['rss']
   # For Open Graph and Twitter Card
   images = ['/images/Preview.png']
   # GitHub link in the upper right corner of pages. Set empty to hide the icon.
-  github = "https://github.com/senzyo-desu/webstack-hugo"
+  github = "https://github.com/senzyo/webstack-hugo"
 
 [params.darkmode]
   enable = true
