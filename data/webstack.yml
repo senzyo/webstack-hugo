@@ -620,11 +620,6 @@
           url: https://www.itdog.cn/
           description:
 
-        - title: Ping0
-          logo: images/logos/Default.svg
-          url: https://ping0.cc/
-          description: "关于IP的具体信息"
-
         - title: 埃文
           logo: images/logos/Default.svg
           url: https://www.ipuu.net/
@@ -645,14 +640,19 @@
           url: https://ipv6.stream/
           description: "IPv6测试聚合站"
 
-        - title: IPCheck.ing
+        - title: IPinfo.CV
           logo: images/logos/Default.svg
-          url: https://ipcheck.ing/
+          url: https://ipinfo.cv/
           description: "关于IP的多种测试"
 
         - title: Sukka IP
           logo: images/logos/Default.svg
           url: https://ip.skk.moe/
+          description: "关于IP的多种测试"
+
+        - title: IPCheck.ing
+          logo: images/logos/Default.svg
+          url: https://ipcheck.ing/
           description: "关于IP的多种测试"
 
         - title: USTC IP Blacklist
