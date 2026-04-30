@@ -1,12 +1,12 @@
 baseURL = "https://nav.senzyo.net/"
-languageCode = "zh-Hans"
+locale = "zh-Hans"
 title = "SenZyo 导航"
 theme = "webstack-hugo"
 preserveTaxonomyNames = true
 disablePathToLower = true
 hasCJKLanguage = true
 enableRobotsTXT = true
-disableKinds = ['rss']
+disableKinds = ['rss', 'taxonomy', 'term']
 
 [params]
   author = "SenZyo"

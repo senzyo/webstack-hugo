@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.LanguageCode }}">
+<html lang="{{ .Site.Language.Locale }}">
 
 <head>
     <meta charset="UTF-8">
@@ -63,7 +63,7 @@
                     </div>
                 </header>
                 <ul id="main-menu" class="main-menu">
-                    {{ range .Site.Data.webstack }}
+                    {{ range hugo.Data.webstack }}
                     {{ if .list }}
                     <li>
                         <a>
@@ -153,7 +153,7 @@
                 </style>
             </nav>
             <div class="sites-list" style="margin-bottom: 8.5rem;">
-                {{ range .Site.Data.webstack }}
+                {{ range hugo.Data.webstack }}
                 {{ if .list }}
                 {{ range .list }}
                 <!-- {{ .term }} -->

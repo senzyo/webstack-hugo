@@ -3,13 +3,22 @@
 
 name = "Webstack Hugo Theme"
 license = "MIT"
-licenselink = "https://github.com/iplaycode/webstack-hugo/blob/master/LICENSE"
+licenselink = "https://github.com/senzyo/webstack-hugo/blob/master/LICENSE"
 description = "Webstack Hugo theme"
-homepage = "https://github.com/iplaycode/webstack-hugo"
+homepage = "https://github.com/senzyo/webstack-hugo"
+demosite = "https://nav.senzyo.net/"
 tags = ["startpage", "webstack", "links", "nav"]
 features = []
-min_version = "2.0"
 
 [author]
+  name = "senzyo"
+  homepage = "https://github.com/senzyo/webstack-hugo"
+
+[original]
   name = "iplaycode"
   homepage = "https://github.com/iplaycode/webstack-hugo"
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.146.0"
