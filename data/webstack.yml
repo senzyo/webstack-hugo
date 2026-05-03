@@ -1164,7 +1164,7 @@
         - title: Omnifile
           logo: images/logos/Default.svg
           url: https://omnifile.co/zh-cn/
-          description: "图像查看、转换、背景移除、OCR等等。浏览器本地运行"
+          description: "图像转换、背景移除、OCR等, 本地离线处理"
 
         - title: Clipdrop
           logo: images/logos/Default.svg
@@ -1200,6 +1200,11 @@
           logo: images/logos/Default.svg
           url: https://dongci.kawo.com/
           description: "最长能转换10秒视频为GIF"
+
+        - title: 图小小
+          logo: images/logos/Default.svg
+          url: https://picsmaller.com/
+          description: "图片压缩, 本地离线处理"
 
         - title: Squoosh
           logo: images/logos/Default.svg
@@ -1518,7 +1523,7 @@
         - title: ギリギリ愛
           logo: images/logos/Default.svg
           url: https://bgm.girigirilove.com/
-          description: "须代理，发布页: girigirilove.top"
+          description: "须代理, 发布页: girigirilove.top"
 
         - title: 稀饭动漫
           logo: images/logos/Default.svg
