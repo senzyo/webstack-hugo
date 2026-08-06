@@ -17,11 +17,11 @@ body.theme-transition *,
 body.theme-transition *::before,
 body.theme-transition *::after {
   transition:
-    background-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    fill 0.35s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    background-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    border-color 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    fill 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* --- view transition: circular reveal for theme toggle --- */
@@ -32,7 +32,7 @@ body.theme-transition *::after {
 }
 
 ::view-transition-new(root) {
-  animation: theme-reveal 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: theme-reveal 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @keyframes theme-reveal {

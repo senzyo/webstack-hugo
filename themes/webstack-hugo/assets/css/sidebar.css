@@ -68,7 +68,7 @@ body.black .sidebar-menu .logo-env .logo .logo-expanded .logo-dark {
   padding: 13px 5px;
   color: var(--text-sidebar-link);
   text-decoration: none;
-  transition: all var(--motion);
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .sidebar-menu .main-menu a > .icon {

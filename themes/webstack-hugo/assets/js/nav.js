@@ -106,7 +106,7 @@
     var targetHeight = ul.scrollHeight;
     ul.style.height = "0";
     ul.style.overflow = "hidden";
-    ul.style.transition = "height 0.3s cubic-bezier(0.16, 1, 0.3, 1)";
+    ul.style.transition = "height 0.4s cubic-bezier(0.16, 1, 0.3, 1)";
     requestAnimationFrame(function () {
       ul.style.height = targetHeight + "px";
     });
@@ -124,7 +124,7 @@
     if (!ul) return;
     li.classList.remove("expanded");
     ul.style.overflow = "hidden";
-    ul.style.transition = "height 0.3s cubic-bezier(0.16, 1, 0.3, 1)";
+    ul.style.transition = "height 0.4s cubic-bezier(0.16, 1, 0.3, 1)";
     ul.style.height = ul.scrollHeight + "px";
     requestAnimationFrame(function () {
       ul.style.height = "0";
