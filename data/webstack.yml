@@ -10,7 +10,7 @@
 
     - title: NodeSeek
       logo: images/logos/NodeSeek.svg
-      url: https://www.nodeseek.com/board
+      url: https://www.nodeseek.com/categories/info
       description: "主机爱好者社区"
 
     - title: GitHub Repos
@@ -86,6 +86,11 @@
           logo: images/logos/Tencent-QQMail.svg
           url: https://mail.qq.com/
           description:
+
+        - title: seek.li
+          logo: images/logos/NodeSeek.svg
+          url: https://seek.li/
+          description: "NodeSeek社区出品"
 
         - title: Proton Mail
           logo: images/logos/Proton-Mail.svg
@@ -480,29 +485,6 @@
           url: https://test.ustc.edu.cn/
           description:
 
-    - term: VPS与代理
-      icon: fa-plane
-      links:
-        - title: DIGVPS
-          logo:
-          url: https://digvps.com/
-          description: "VPS评测"
-
-        - title: VPS Is
-          logo:
-          url: https://vpsls.com/
-          description: "VPS收录"
-
-        - title: DNS Leak Test
-          logo:
-          url: https://browserleaks.com/dns
-          description:
-
-        - title: WebRTC Leak Test
-          logo:
-          url: https://browserleaks.com/webrtc
-          description:
-
     - term: 扫描病毒
       icon: fa-exclamation-triangle
       links:
@@ -574,6 +556,19 @@
           url: https://www.rockmods.net/
           description: "软件破解站"
 
+    - term: VPS
+      icon: fa-server
+      links:
+        - title: DIGVPS
+          logo:
+          url: https://digvps.com/
+          description: "VPS评测"
+
+        - title: VPS Is
+          logo:
+          url: https://vpsls.com/
+          description: "VPS收录"
+
     - term: 站长工具
       icon: fa-sitemap
       links:
@@ -591,6 +586,11 @@
           logo:
           url: https://www.itdog.cn/
           description:
+
+        - title: iLatency
+          logo: images/logos/NodeSeek.svg
+          url: https://ilatency.com/
+          description: "NodeSeek社区出品"
 
         - title: 埃文
           logo:
@@ -617,10 +617,15 @@
           url: https://ip.skk.moe/
           description: "关于IP的多种测试"
 
-        - title: IPCheck.ing
+        - title: DNS Leak Test
           logo:
-          url: https://ipcheck.ing/
-          description: "关于IP的多种测试"
+          url: https://browserleaks.com/dns
+          description:
+
+        - title: WebRTC Leak Test
+          logo:
+          url: https://browserleaks.com/webrtc
+          description:
 
         - title: USTC IP Blacklist
           logo:
