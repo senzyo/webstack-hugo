@@ -10,6 +10,7 @@
     {{ template "_internal/twitter_cards.html" . }}
     <link rel="icon" href="favicon.ico" sizes="48x48">
     <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     {{ with .Site.Params.verification.google }}
     <meta name="google-site-verification" content="{{ . }}" />
     {{ end }}
@@ -49,7 +50,7 @@
     <script>
         (function(){ if(localStorage.getItem('theme')==='light') document.body.classList.remove('black'); })();
     </script>
-    {{ partial "icon-sprite.html" . }}
+
     <div class="page-container">
         <div class="sidebar-menu toggle-others fixed">
             <div class="sidebar-menu-inner">
@@ -65,7 +66,7 @@
                     </div>
                     <div class="mobile-menu-toggle mobile-only">
                         <a href="#" data-action="toggle-mobile-menu" aria-label="menu">
-                            {{ partial "icon" "fa-bars" }}
+                            {{ partial "icon" "fa-solid fa-bars" }}
                         </a>
                     </div>
                 </header>
@@ -105,7 +106,7 @@
                 <div class="top-nav-content">
                     <ul class="top-nav-menu left-links">
                         <li class="desktop-only">
-                            <a href="#" data-action="toggle-sidebar" aria-label="sidebar">{{ partial "icon" "fa-bars" }}</a>
+                            <a href="#" data-action="toggle-sidebar" aria-label="sidebar">{{ partial "icon" "fa-solid fa-bars" }}</a>
                         </li>
                     </ul>
                     {{ partial "search.html" . }}
@@ -134,24 +135,24 @@
             <footer class="main-footer">
                 <div id="theme-toggle">
                     <a href="#" rel="theme-toggle" aria-label="toggle theme">
-                        {{ partial "icon" "fa-sun" }}
+                        {{ partial "icon" "fa-solid fa-sun" }}
                     </a>
                 </div>
                 <div id="go-up">
                     <a href="#" rel="go-top" aria-label="go to top">
-                        {{ partial "icon" "fa-angle-up" }}
+                        {{ partial "icon" "fa-solid fa-angle-up" }}
                     </a>
                 </div>
                 <div id="go-down">
                     <a href="#" rel="go-bottom" aria-label="go to bottom">
-                        {{ partial "icon" "fa-angle-down" }}
+                        {{ partial "icon" "fa-solid fa-angle-down" }}
                     </a>
                 </div>
                 <div class="footer-inner">
                     <div class="footer-text">
                         <span>Theme&nbsp;<a href="https://github.com/senzyo/webstack-hugo" target="_blank" rel="noopener noreferrer"><strong>webstack-hugo</strong></a></span>
                         {{ if ne .Site.Params.footer.copyright false }}
-                            {{ partial "icon" "fa-copyright" }}
+                            Copyright
                             {{ with .Site.Params.footer.since }}
                                 <span>{{ if lt . now.Year }}{{ . }} - {{ end }}{{ now.Year }}</span>
                             {{ else }}

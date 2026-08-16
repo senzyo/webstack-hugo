@@ -48,3 +48,9 @@ footer.main-footer #go-down a:hover,
 footer.main-footer #theme-toggle a:hover {
   background-color: var(--fab-hover);
 }
+
+footer.main-footer #go-up a > .icon,
+footer.main-footer #go-down a > .icon,
+footer.main-footer #theme-toggle a > .icon {
+  vertical-align: 0.08em;
+}

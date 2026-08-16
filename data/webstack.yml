@@ -1,7 +1,7 @@
 ---
 
 - taxonomy: 常用
-  icon: fa-star
+  icon: fa-solid fa-star
   links:
     - title: V2EX
       logo: images/logos/V2EX.svg
@@ -19,7 +19,7 @@
       description: "SenZyo的GitHub Repositories"
 
 - taxonomy: 人工智能
-  icon: fa-comments
+  icon: fa-solid fa-comment-nodes
   links:
     - title: ChatGPT
       logo: images/logos/OpenAI-ChatGPT.svg
@@ -62,10 +62,10 @@
       description:
 
 - taxonomy: 邮箱
-  icon: fa-envelope
+  icon: fa-solid fa-envelope
   list:
     - term: 常用邮箱
-      icon: fa-envelope
+      icon: fa-solid fa-envelope
       links:
         - title: Gmail
           logo: images/logos/Google-Gmail.svg
@@ -103,7 +103,7 @@
           description:
 
     - term: 临时邮箱
-      icon: fa-envelope-open
+      icon: fa-solid fa-envelope-open
       links:
         - title: 临时邮箱
           logo: images/logos/LinShiYouXiang.svg
@@ -126,7 +126,7 @@
           description:
 
 - taxonomy: 工具箱
-  icon: fa-cogs
+  icon: fa-solid fa-screwdriver-wrench
   links:
     - title: 优秀工具箱集合
       logo: images/logos/GitHub.svg
@@ -184,7 +184,7 @@
       description:
 
 - taxonomy: 云传输
-  icon: fa-exchange
+  icon: fa-solid fa-up-down
   links:
     - title: PairDrop
       logo:
@@ -242,10 +242,10 @@
       description: "仅支持上传MP4视频, 支持在线播放"
 
 - taxonomy: 文档
-  icon: fa-file
+  icon: fa-solid fa-file-lines
   list:
     - term: 编辑辅助
-      icon: fa-edit
+      icon: fa-solid fa-pen-nib
       links:
         - title: 秘塔写作猫
           logo: images/logos/Mita.svg
@@ -298,7 +298,7 @@
           description: "多功能JSON可视化与处理工具"
 
     - term: PDF
-      icon: fa-file-pdf-o
+      icon: fa-solid fa-file-pdf
       links:
         - title: PDF派
           logo: images/logos/PDFpai.svg
@@ -331,7 +331,7 @@
           description:
 
     - term: PPT
-      icon: fa-file-powerpoint-o
+      icon: fa-solid fa-file-powerpoint
       links:
         - title: AI PPT Maker
           logo:
@@ -354,10 +354,10 @@
           description:
 
 - taxonomy: IT
-  icon: fa-desktop
+  icon: fa-solid fa-laptop-code
   list:
     - term: 查询
-      icon: fa-search
+      icon: fa-solid fa-magnifying-glass
       links:
         - title: SOC PK
           logo: images/logos/Geekerwan.jpg
@@ -415,7 +415,7 @@
           description: "发现流行软件的开源替代品"
 
     - term: 学习
-      icon: fa-graduation-cap
+      icon: fa-solid fa-book-open-reader
       links:
         - title: Visual Go
           logo: images/logos/VisualGo.svg
@@ -453,7 +453,7 @@
           description: "编程自学之路"
 
     - term: 网络测速
-      icon: fa-tachometer
+      icon: fa-solid fa-gauge-high
       links:
         - title: 网络测速面板
           logo:
@@ -486,7 +486,7 @@
           description:
 
     - term: 扫描病毒
-      icon: fa-exclamation-triangle
+      icon: fa-solid fa-shield-halved
       links:
         - title: VirusTotal
           logo: images/logos/VirusTotal.svg
@@ -524,7 +524,7 @@
           description: "支持sisx, sis, apk, jar格式"
 
     - term: 软件解析
-      icon: fa-key
+      icon: fa-solid fa-key
       links:
         - title: RG-Adguard
           logo:
@@ -557,7 +557,7 @@
           description: "软件破解站"
 
     - term: VPS
-      icon: fa-server
+      icon: fa-solid fa-server
       links:
         - title: DIGVPS
           logo:
@@ -570,7 +570,7 @@
           description: "VPS收录"
 
     - term: 站长工具
-      icon: fa-sitemap
+      icon: fa-solid fa-sitemap
       links:
         - title: IP计算器
           logo: images/logos/Calculator.svg
@@ -658,7 +658,7 @@
           description: "检查网站死链"
 
     - term: 第三方服务
-      icon: fa-plug
+      icon: fa-solid fa-plug
       links:
         - title: FreeSSL
           logo: images/logos/FreeSSL.svg
@@ -696,7 +696,7 @@
           description: "反垃圾评论"
 
     - term: 搜索引擎平台
-      icon: fa-search
+      icon: fa-solid fa-magnifying-glass-chart
       links:
         - title: 百度搜索资源平台
           logo: images/logos/Baidu.svg
@@ -719,7 +719,7 @@
           description:
 
     - term: 网站扫描
-      icon: fa-exclamation-triangle
+      icon: fa-brands fa-searchengin
       links:
         - title: Censys
           logo: images/logos/Censys.svg
@@ -737,10 +737,10 @@
           description:
 
 - taxonomy: 设计
-  icon: fa-paint-brush
+  icon: fa-solid fa-compass-drafting
   list:
     - term: 平面图标
-      icon: fa-font-awesome
+      icon: fa-brands fa-font-awesome
       links:
         - title: Font Awesome
           logo: images/logos/FontAwesome6.svg
@@ -808,7 +808,7 @@
           description: "各种雪花的矢量图"
 
     - term: 图库
-      icon: fa-photo
+      icon: fa-solid fa-images
       links:
         - title: Logosc
           logo: images/logos/Logosc.svg
@@ -926,7 +926,7 @@
           description: "国内精美CG作品"
 
     - term: 色库
-      icon: fa-dashboard
+      icon: fa-solid fa-palette
       links:
         - title: Color4bg
           logo:
@@ -974,7 +974,7 @@
           description: "颜料、渐变与双色调"
 
     - term: 航拍
-      icon: fa-camera
+      icon: fa-solid fa-camera-retro
       links:
         - title: 天空之城
           logo: images/logos/SkyPixel.svg
@@ -992,7 +992,7 @@
           description: "全球全景VR"
 
     - term: 地图
-      icon: fa-map
+      icon: fa-solid fa-map-location-dot
       links:
         - title: 易制地图
           logo: images/logos/Makeamap.svg
@@ -1040,7 +1040,7 @@
           description: "1980年以来全球地震地图"
 
     - term: 模型
-      icon: fa-cubes
+      icon: fa-solid fa-shapes
       links:
         - title: Dimensions
           logo: images/logos/Dimensions.svg
@@ -1088,7 +1088,7 @@
           description: "3D素材"
 
     - term: 截图套壳
-      icon: fa-laptop
+      icon: fa-solid fa-mobile-screen
       links:
         - title: Device Shots
           logo: images/logos/DeviceShots.svg
@@ -1111,7 +1111,7 @@
           description: "截图美化"
 
     - term: 图片处理
-      icon: fa-crop
+      icon: fa-solid fa-crop-simple
       links:
         - title: Omnifile
           logo:
@@ -1209,7 +1209,7 @@
           description: "PNG转SVG"
 
     - term: 抠除背景
-      icon: fa-eraser
+      icon: fa-solid fa-eraser
       links:
         - title: hama
           logo: images/logos/Hama.png
@@ -1232,7 +1232,7 @@
           description: "抠图"
 
     - term: 图片特效
-      icon: fa-magic
+      icon: fa-solid fa-wand-magic-sparkles
       links:
         - title: BgGenerator
           logo:
@@ -1270,7 +1270,7 @@
           description: "两张图片风格合并效果"
 
     - term: 文字处理
-      icon: fa-font
+      icon: fa-solid fa-font
       links:
         - title: Free Font
           logo: images/logos/GitHub.svg
@@ -1313,7 +1313,7 @@
           description: "文字跟随鼠标轨迹"
 
     - term: 数据图表
-      icon: fa-bar-chart
+      icon: fa-solid fa-chart-line
       links:
         - title: Diagrams
           logo: images/logos/Diagrams.svg
@@ -1341,7 +1341,7 @@
           description:
 
     - term: 点击生成
-      icon: fa-mouse-pointer
+      icon: fa-solid fa-arrow-pointer
       links:
         - title: 顔アイコンジェネレーターZ
           logo:
@@ -1364,7 +1364,7 @@
           description: "生成球体或平面上的城市"
 
     - term: 数字艺术
-      icon: fa-sliders
+      icon: fa-solid fa-sliders
       links:
         - title: Weave Silk
           logo:
@@ -1427,10 +1427,10 @@
           description: "卡通人物数字展示牌"
 
 - taxonomy: ACGN
-  icon: fa-heart
+  icon: fa-brands fa-bilibili
   list:
     - term: 在线动漫
-      icon: fa-youtube-play
+      icon: fa-brands fa-youtube
       links:
         - title: 樱之空动漫
           logo:
@@ -1453,7 +1453,7 @@
           description: "导航页: xifan.moe"
 
     - term: 动漫下载
-      icon: fa-download
+      icon: fa-solid fa-download
       links:
         - title: 菲特动漫
           logo:
@@ -1511,7 +1511,7 @@
           description: "须代理"
 
     - term: 漫画
-      icon: fa-eye
+      icon: fa-solid fa-paintbrush
       links:
         - title: 拷贝漫画
           logo:
@@ -1574,7 +1574,7 @@
           description: "下载mobi和epub格式漫画"
 
     - term: 以图搜图
-      icon: fa-search
+      icon: fa-solid fa-magnifying-glass-location
       links:
         - title: SauceNAO
           logo:
@@ -1602,7 +1602,7 @@
           description:
 
     - term: 游戏
-      icon: fa-gamepad
+      icon: fa-solid fa-gamepad
       links:
         - title: 喜加一
           logo:
@@ -1675,7 +1675,7 @@
           description: "收集GitHub上好玩的HTML游戏"
 
     - term: 其他
-      icon: fa-leaf
+      icon: fa-solid fa-circle-plus
       links:
         - title: ACG导航网
           logo:
@@ -1713,10 +1713,10 @@
           description: "根据图片或视频片段查询出于哪部动漫"
 
 - taxonomy: 视频
-  icon: fa-play-circle
+  icon: fa-solid fa-circle-play
   list:
     - term: 在线影视
-      icon: fa-youtube-play
+      icon: fa-brands fa-youtube
       links:
         - title: 爱看机器人
           logo:
@@ -1734,7 +1734,7 @@
           description: "微信公众号: 茶杯狐"
 
     - term: 视频下载
-      icon: fa-download
+      icon: fa-solid fa-download
       links:
         - title: TiQu
           logo:
@@ -1782,7 +1782,7 @@
           description: "须代理"
 
     - term: 视频处理
-      icon: fa-film
+      icon: fa-solid fa-film
       links:
         - title: 录咖
           logo:
@@ -1795,7 +1795,7 @@
           description:
 
     - term: 摄像头
-      icon: fa-camera
+      icon: fa-solid fa-camera
       links:
         - title: uIPCat
           logo:
@@ -1808,10 +1808,10 @@
           description: "基于WebRTC的实时摄像头与屏幕共享"
 
 - taxonomy: 音频
-  icon: fa-music
+  icon: fa-solid fa-music
   list:
     - term: 音频搜索
-      icon: fa-music
+      icon: fa-solid fa-magnifying-glass-plus
       links:
         - title: GNOOSIC
           logo: images/logos/Gnoosic.svg
@@ -1839,7 +1839,7 @@
           description: "动漫无损音乐下载"
 
     - term: 音频处理
-      icon: fa-fast-forward
+      icon: fa-solid fa-volume-xmark
       links:
         - title: 灯里的歌词滚动姬
           logo: images/logos/LRC-Maker.svg
@@ -1877,10 +1877,10 @@
           description: "二次元文本转语音"
 
 - taxonomy: 更多
-  icon: fa-leaf
+  icon: fa-solid fa-circle-plus
   list:
     - term: 书籍
-      icon: fa-book
+      icon: fa-solid fa-book
       links:
         - title: Telegram精选推荐
           logo: images/logos/Telegram.svg
@@ -1988,7 +1988,7 @@
           description: "非常齐全的教科书下载站"
 
     - term: 文化
-      icon: fa-fire
+      icon: fa-solid fa-landmark
       links:
         - title: 中华珍宝馆
           logo: images/logos/ZhenBao.svg
@@ -2071,7 +2071,7 @@
           description:
 
     - term: 趣站
-      icon: fa-futbol-o
+      icon: fa-solid fa-face-laugh-squint
       links:
         - title: The Useless Web
           logo: images/logos/TheUselessWeb.svg
@@ -2133,8 +2133,8 @@
           url: https://animagraffs.com/
           description: "用动画解释机器工作原理"
 
-    - term: 检索
-      icon: fa-search
+    - term: 检索库
+      icon: fa-solid fa-database
       links:
         - title: 邮编库
           logo:
@@ -2182,7 +2182,7 @@
           description:
 
     - term: 杂项
-      icon: fa-pagelines
+      icon: fa-solid fa-circle-plus
       links:
         - title: Greasy Fork
           logo: images/logos/GreasyFork.svg

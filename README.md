@@ -3,7 +3,7 @@
 ## 功能特性
 
 - **数据驱动站点列表**: [data/webstack.yml](/data/webstack.yml) 定义全部站点。
-- **自定义内联 SVG 图标系统**: [data/icons.yml](/data/icons.yml) 定义图标 (命名遵循 Font Awesome 规范), 由 `icon-sprite.html` 内联注入 sprite, 通过 `partial "icon"` 按名引用, 不依赖任何外部图标库。
+- **Font Awesome 7 字体图标**: 基于 [Font Awesome Free](https://fontawesome.com/) webfont, 菜单 / 搜索 / 页脚图标通过 `partial "icon"` 渲染, 引用方式见下文。
 - **明暗主题切换**: 默认暗色, 支持 [View Transitions API](https://developer.mozilla.org/en-US/docs/Web/API/View_Transitions_API) 圆形展开转场动画, 并兼容 `prefers-reduced-motion`。选择保存在 `localStorage`。
 - **顶栏搜索**: 搜索框固定于顶栏, 支持 DuckDuckGo、Google、Bing、秘塔、Perplexity、Yandex、百度共 7 种搜索引擎, 选择结果保存在 `localStorage`, 新标签页打开。
 - **站点所有权验证**: 通过 `<meta>` 标签支持 Google、Bing、Yandex、Pinterest、百度、360、搜狗 7 个平台, 在 `config.toml` 中填写即可。
@@ -23,10 +23,10 @@ webstack-hugo/
 ├── config.toml                    # 站点配置
 ├── check_urls.sh                  # URL 检查脚本
 ├── data/
-│   ├── icons.yml                  # 菜单图标 (内联 SVG) 定义
 │   └── webstack.yml               # 站点列表 (分类 / 链接)
 ├── static/
 │   ├── favicon.ico / favicon.svg  # 本项目网站图标
+│   ├── fontawesome/               # Font Awesome Free 资源
 │   └── images/
 │       ├── Default.svg            # 站点图标的回退图标
 │       ├── logo.svg               # 折叠态 logo
@@ -46,8 +46,7 @@ webstack-hugo/
             ├── index.html
             ├── robots.txt
             └── partials/
-                ├── icon-sprite.html   # 内联 SVG sprite
-                ├── icon.html          # 按名渲染图标
+                ├── icon.html          # 渲染图标 (输出 Font Awesome 类名)
                 ├── search.html        # 搜索框
                 └── site-section.html  # 分类区块
 ```

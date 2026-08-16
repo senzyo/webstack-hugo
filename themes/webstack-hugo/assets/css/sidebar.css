@@ -314,12 +314,35 @@ body.black .sidebar-menu .logo-env .logo .logo-expanded .logo-dark {
     top: 0;
     left: 76px;
     text-align: left;
+    max-height: calc(100vh - 8px);
+    max-height: calc(100dvh - 8px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--sidebar-scrollbar) transparent;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li > ul::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li > ul::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .sidebar-menu.collapsed .main-menu > li > ul::-webkit-scrollbar-thumb {
+    background: var(--sidebar-scrollbar);
+    border-radius: 2px;
   }
 
   /* 打开条件: 鼠标悬停 / 键盘聚焦 */
   .sidebar-menu.collapsed .main-menu > li:hover > ul,
   .sidebar-menu.collapsed .main-menu > li:focus-within > ul {
     display: block;
+  }
+
+  /* 鼠标悬浮在菜单内时, 关闭仅由焦点打开、未被悬浮的其他 flyout (避免 A1/B1 并存) */
+  .sidebar-menu.collapsed .main-menu:hover > li:not(:hover):focus-within > ul {
+    display: none;
   }
 
   .sidebar-menu.collapsed .main-menu > li > ul > li > a {

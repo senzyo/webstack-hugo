@@ -234,23 +234,24 @@
   // theme toggle
   var themeToggle = document.querySelector('a[rel="theme-toggle"]');
   if (themeToggle) {
-    var themeUse = themeToggle.querySelector("use");
-    if (themeUse) {
-      themeUse.setAttribute(
-        "href",
-        document.body.classList.contains("black") ? "#fa-sun" : "#fa-moon",
-      );
-    }
+    var themeIcon = themeToggle.querySelector("i.icon");
+    var setThemeIcon = function (isDark) {
+      if (!themeIcon) return;
+      themeIcon.className = isDark
+        ? "fa-solid fa-sun icon"
+        : "fa-solid fa-moon icon";
+    };
+    setThemeIcon(document.body.classList.contains("black"));
     var applyTheme = function () {
       var isDark = document.body.classList.contains("black");
       if (isDark) {
         document.body.classList.remove("black");
         localStorage.setItem("theme", "light");
-        if (themeUse) themeUse.setAttribute("href", "#fa-moon");
+        setThemeIcon(false);
       } else {
         document.body.classList.add("black");
         localStorage.setItem("theme", "dark");
-        if (themeUse) themeUse.setAttribute("href", "#fa-sun");
+        setThemeIcon(true);
       }
     };
     themeToggle.addEventListener("click", function (e) {
