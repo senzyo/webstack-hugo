@@ -632,10 +632,15 @@
           url: https://blackip.ustc.edu.cn/intro.php
           description: "恶意IP黑名单"
 
+        - title: IPQS
+          logo:
+          url: https://www.ipqualityscore.com/
+          description: "IP质量评分"
+
         - title: Scamalytics
           logo:
           url: https://scamalytics.com/
-          description: "脏IP检测"
+          description: "IP质量评分"
 
         - title: Whois Lookup
           logo: images/logos/Whois.svg
@@ -1901,6 +1906,11 @@
           logo:
           url: https://zh.annas-archive.gl/
           description: "en.wikipedia.org/wiki/Anna%27s_Archive"
+
+        - title: Sci-Hub
+          logo: images/logos/Sci-Hub.svg
+          url: https://sci-hub.su/
+          description: "en.wikipedia.org/wiki/Sci-Hub"
 
         - title: 世界数字图书馆
           logo: images/logos/loc.svg
