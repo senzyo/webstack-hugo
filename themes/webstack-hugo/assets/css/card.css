@@ -23,29 +23,76 @@
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+.site-card::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  background: var(--bg-card-hover);
+  box-shadow: inset 0 0 0 1px var(--border-card);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-card::after {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
 .site-card:focus-visible {
   transform: translateY(-6px);
-  background: var(--bg-card-hover) !important;
-  box-shadow: var(--shadow-card);
   text-decoration: none;
   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.site-card:focus-visible::before,
+.site-card:focus-visible::after {
+  opacity: 1;
+}
+
+.site-card:focus-visible .card-title {
+  filter: var(--card-title-hover-filter);
 }
 
 @media (hover: hover) {
   .site-card:hover {
     transform: translateY(-6px);
-    background: var(--bg-card-hover) !important;
-    box-shadow: var(--shadow-card);
     text-decoration: none;
     transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .site-card:hover::before,
+  .site-card:hover::after {
+    opacity: 1;
+  }
+
+  .site-card:hover .card-title {
+    filter: var(--card-title-hover-filter);
   }
 }
 
 /* --- card body --- */
+.card-body {
+  position: relative;
+  z-index: 1;
+}
+
 .card-body img {
   float: left;
   display: block;
   margin-right: 10px;
+}
+
+.card-title {
+  color: var(--text-link);
+  transition: filter 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .card-text p {

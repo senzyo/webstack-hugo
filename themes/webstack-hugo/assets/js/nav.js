@@ -254,8 +254,8 @@
         setThemeIcon(true);
       }
     };
-    themeToggle.addEventListener("click", function (e) {
-      e.preventDefault();
+    var activeTransition = null;
+    var runThemeToggle = function () {
       if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
         applyTheme();
         return;
@@ -268,24 +268,120 @@
         }, 400);
         return;
       }
-      var rect = themeToggle.getBoundingClientRect();
-      var x = rect.left + rect.width / 2;
-      var y = rect.top + rect.height / 2;
-      var maxRadius = Math.hypot(
-        Math.max(x, window.innerWidth - x),
-        Math.max(y, window.innerHeight - y),
-      );
+      setThemeIcon(!document.body.classList.contains("black"));
       var root = document.documentElement;
-      root.style.setProperty("--vt-x", x + "px");
-      root.style.setProperty("--vt-y", y + "px");
-      root.style.setProperty("--vt-r", maxRadius + "px");
-      document.startViewTransition(applyTheme).finished.finally(function () {
+      var rect = themeToggle.getBoundingClientRect();
+      var centerX = rect.left + rect.width / 2;
+      var centerY = rect.top + rect.height / 2;
+      var oldProbe = document.getElementById("vt-origin-probe");
+      if (oldProbe) oldProbe.remove();
+      var probe = document.createElement("div");
+      probe.id = "vt-origin-probe";
+      probe.style.cssText =
+        "position:fixed;top:0;left:0;width:1px;height:1px;visibility:hidden;pointer-events:none;view-transition-name:vt-origin";
+      document.body.appendChild(probe);
+      var transition = document.startViewTransition(applyTheme);
+      activeTransition = transition;
+      transition.ready
+        .then(function () {
+          var vw = window.innerWidth;
+          var vh = window.innerHeight;
+          var offsetX = 0;
+          var offsetY = 0;
+          try {
+            var vt = getComputedStyle(root, "::view-transition");
+            var w = parseFloat(vt.width);
+            var h = parseFloat(vt.height);
+            var m = new DOMMatrix(
+              getComputedStyle(
+                root,
+                "::view-transition-group(vt-origin)",
+              ).transform,
+            );
+            if (w > 0 && h > 0 && isFinite(m.e) && isFinite(m.f)) {
+              vw = w;
+              vh = h;
+              offsetX = m.e;
+              offsetY = m.f;
+            }
+          } catch (err) {}
+          var x = centerX + offsetX;
+          var y = centerY + offsetY;
+          var maxRadius = Math.hypot(
+            Math.max(x, vw - x),
+            Math.max(y, vh - y),
+          );
+          var radiusRef = Math.hypot(vw, vh) / Math.SQRT2;
+          root.style.setProperty("--vt-x", (x / vw) * 100 + "%");
+          root.style.setProperty("--vt-y", (y / vh) * 100 + "%");
+          root.style.setProperty("--vt-r", (maxRadius / radiusRef) * 100 + "%");
+        })
+        .catch(function () {});
+      transition.finished.finally(function () {
+        if (activeTransition !== transition) return;
+        activeTransition = null;
+        probe.remove();
         root.style.removeProperty("--vt-x");
         root.style.removeProperty("--vt-y");
         root.style.removeProperty("--vt-r");
       });
+    };
+    themeToggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      runThemeToggle();
     });
+    document.addEventListener(
+      "click",
+      function (e) {
+        if (!activeTransition) return;
+        if (
+          e.target &&
+          e.target.closest &&
+          e.target.closest('a[rel="theme-toggle"]')
+        ) {
+          return;
+        }
+        var rect = themeToggle.getBoundingClientRect();
+        if (
+          e.clientX >= rect.left &&
+          e.clientX <= rect.right &&
+          e.clientY >= rect.top &&
+          e.clientY <= rect.bottom
+        ) {
+          runThemeToggle();
+        }
+      },
+      true,
+    );
   }
+
+  function updateRowIntrinsicSizes() {
+    var list = document.querySelector(".sites-list");
+    if (!list) return;
+    var rows = list.querySelectorAll(".row");
+    if (!rows.length) return;
+    var first = rows[0];
+    var tracks = getComputedStyle(first).gridTemplateColumns;
+    var cols =
+      tracks && tracks !== "none" ? tracks.trim().split(/\s+/).length : 1;
+    var wrap = first.querySelector(".site-card-wrap");
+    var cardH = wrap ? parseFloat(getComputedStyle(wrap).height) : 0;
+    var gap = parseFloat(getComputedStyle(first).rowGap);
+    if (!cardH || !isFinite(cardH)) cardH = 86;
+    if (!gap || !isFinite(gap)) gap = 24;
+    for (var i = 0; i < rows.length; i++) {
+      var count = rows[i].children.length;
+      var lines = Math.max(1, Math.ceil(count / cols));
+      rows[i].style.containIntrinsicSize =
+        "auto " + (lines * cardH + (lines - 1) * gap) + "px";
+    }
+  }
+  updateRowIntrinsicSizes();
+  var rowSizeTimer = null;
+  window.addEventListener("resize", function () {
+    clearTimeout(rowSizeTimer);
+    rowSizeTimer = setTimeout(updateRowIntrinsicSizes, 200);
+  });
 
   // auto collapse/expand sidebar across mobile / narrow-desktop / wide-desktop zones
   function getZone(width) {

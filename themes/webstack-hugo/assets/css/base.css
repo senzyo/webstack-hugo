@@ -32,12 +32,12 @@ body.theme-transition *::after {
 }
 
 ::view-transition-new(root) {
-  animation: theme-reveal 1s cubic-bezier(0.16, 1, 0.3, 1);
+  animation: theme-reveal 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes theme-reveal {
   from {
-    clip-path: circle(0px at var(--vt-x, 50%) var(--vt-y, 50%));
+    clip-path: circle(0% at var(--vt-x, 50%) var(--vt-y, 50%));
   }
   to {
     clip-path: circle(var(--vt-r, 150%) at var(--vt-x, 50%) var(--vt-y, 50%));
@@ -131,6 +131,17 @@ h4.text-gray {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 24px;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 1100px;
+  overflow-clip-margin: 60px;
+}
+
+/* Safari 不支持 overflow-clip-margin, content-visibility 的绘制包含
+   会始终把卡片悬浮阴影裁剪在 padding box 内, 故回退为普通渲染 */
+@supports not (overflow-clip-margin: 60px) {
+  .row {
+    content-visibility: visible;
+  }
 }
 
 /* --- clearfix --- */

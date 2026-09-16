@@ -15,6 +15,7 @@
   --text-link-hover: #000000;
   --text-body: #838383;
   --text-muted: #838383;
+  --card-title-hover-filter: brightness(0);
 
   --border-card: #e8e2d3;
   --shadow-card: 0 17px 50px -8px rgba(0, 0, 0, 0.15);
@@ -55,6 +56,7 @@
   --text-link-hover: #ffffff;
   --text-body: #aaaaaa;
   --text-muted: #aaaaaa;
+  --card-title-hover-filter: brightness(1.5);
 
   --border-card: transparent;
   --shadow-card: 0 17px 50px -8px rgba(255, 255, 255, 0.5);
