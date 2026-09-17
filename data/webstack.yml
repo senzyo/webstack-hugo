@@ -32,7 +32,7 @@
 
     - title: Gemini
       logo: images/logos/Google-Gemini.svg
-      url: https://aistudio.google.com/app/prompts/
+      url: https://aistudio.google.com/app/prompts/new_chat
       description: "须代理"
 
     - title: Grok
