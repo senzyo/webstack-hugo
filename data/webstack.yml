@@ -32,7 +32,7 @@
 
     - title: Gemini
       logo: images/logos/Google-Gemini.svg
-      url: https://aistudio.google.com/app/prompts/
+      url: https://aistudio.google.com/app/prompts/new_chat
       description: "须代理"
 
     - title: Grok
@@ -493,6 +493,11 @@
           logo:
           url: https://ipv6.stream/
           description: "IPv6测试聚合站"
+
+        - title: IPLark
+          logo:
+          url: https://iplark.com/
+          description: "关于IP的多种测试"
 
         - title: IPinfo.CV
           logo:
@@ -2186,6 +2191,11 @@
       logo:
       url: https://www.acwifi.net/
       description: "详细的路由器拆解评测"
+
+    - title: 猫点饭
+      logo:
+      url: https://mao.fan/
+      description: "路由器参考"
 
     - title: 推荐4K投影站
       logo:
