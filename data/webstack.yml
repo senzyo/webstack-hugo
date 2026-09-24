@@ -2241,3 +2241,8 @@
       logo:
       url: https://animagraffs.com/
       description: "用动画解释机器工作原理"
+
+    - title: SaveTrip
+      logo:
+      url: https://savtrip.com/
+      description: "组合策略寻找低价机票"
