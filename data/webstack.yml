@@ -246,6 +246,11 @@
     - term: 查询
       icon: fa-solid fa-magnifying-glass
       links:
+        - title: OpenTheRank
+          logo:
+          url: https://opentherank.com/zh/ai-pricing/
+          description: "全球 AI 订阅跨区比价"
+
         - title: SOC PK
           logo: images/logos/Geekerwan.jpg
           url: https://socpk.com/
